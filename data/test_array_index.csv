@@ -1,0 +1,807 @@
+row,tile_id,naip_year,label_scope,stratum,wui_class,wui_group,ecoregion_l3,rrk_region,label_naip_year,index_method,crs,transform
+0,WUI_24437_NW,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,704790.0000,0.0000,-0.6000,4598184.0000"
+1,WUI_24437_NE,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,705096.6000,0.0000,-0.6000,4598194.2000"
+2,WUI_33547_NW,2016,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,388990.2000,0.0000,-0.6000,3817786.8000"
+3,WUI_33547_NE,2016,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,389297.4000,0.0000,-0.6000,3817777.2000"
+4,WUI_33547_SE,2016,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,389288.4000,0.0000,-0.6000,3817470.0000"
+5,WUI_25907_SE,2018,full,WUI,Urban,Urban,Central Basin and Range,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,736284.0000,0.0000,-0.6000,4394773.8000"
+6,WUI_10474_NE,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,575170.8000,0.0000,-0.6000,4432324.2000"
+7,WUI_14906_NW,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,621698.4000,0.0000,-0.6000,4407798.6000"
+8,WUI_35819_NW,2018,full,WUI,Urban,Urban,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,437505.6000,0.0000,-0.6000,3758130.0000"
+9,WUI_46577_NW,2020,full,WUI,Intermix,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,648646.8000,0.0000,-0.6000,3737469.6000"
+10,WUI_46577_NE,2020,full,WUI,Intermix,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,648953.4000,0.0000,-0.6000,3737459.4000"
+11,WUI_46577_SE,2020,full,WUI,Intermix,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,648943.8000,0.0000,-0.6000,3737152.2000"
+12,WUI_25739_SE,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,725695.8000,0.0000,-0.6000,4604682.0000"
+13,WUI_10454_SW,2018,full,WUI,Interface,WUI,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,584622.0000,0.0000,-0.6000,4100229.0000"
+14,WUI_21538_SW,2018,full,WUI,Interface,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,688815.0000,0.0000,-0.6000,4322052.6000"
+15,WUI_21538_NW,2018,full,WUI,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,688804.8000,0.0000,-0.6000,4322359.2000"
+16,WUI_45067_NW,2018,full,WUI,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,543046.2000,0.0000,-0.6000,3773896.2000"
+17,WUI_45067_SE,2018,full,WUI,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,543343.2000,0.0000,-0.6000,3773579.4000"
+18,WUI_11637_SW,2018,full,WUI,Urban,Urban,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,589802.4000,0.0000,-0.6000,4265092.2000"
+19,WUI_11637_NW,2018,full,WUI,Urban,Urban,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,589792.8000,0.0000,-0.6000,4265398.8000"
+20,WUI_11637_SE,2018,full,WUI,Interface,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,590110.2000,0.0000,-0.6000,4265101.8000"
+21,WUI_36853_SW,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,453729.6000,0.0000,-0.6000,3777282.6000"
+22,WUI_36853_NE,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,454046.4000,0.0000,-0.6000,3777579.6000"
+23,WUI_10459_NE,2018,full,WUI,Wildland,Wildland,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,585112.2000,0.0000,-0.6000,4094483.4000"
+24,WUI_10459_SE,2018,full,WUI,Interface,WUI,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,585121.8000,0.0000,-0.6000,4094177.4000"
+25,WUI_33638_NE,2018,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,392886.0000,0.0000,-0.6000,3877533.0000"
+26,WUI_3441_SW,2018,full,WUI,Wildland,Wildland,Coast Range,,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,513101.4000,0.0000,-0.6000,4216713.0000"
+27,WUI_14839_SW,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,620840.4000,0.0000,-0.6000,4407463.2000"
+28,WUI_14839_NW,2018,full,WUI,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,620830.8000,0.0000,-0.6000,4407770.4000"
+29,WUI_28084_SW,2018,full,WUI,Interface,WUI,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,250839.6000,0.0000,-0.6000,3817330.8000"
+30,WUI_28084_SE,2018,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,251147.4000,0.0000,-0.6000,3817321.8000"
+31,WUI_14791_SW,2018,full,WUI,Interface,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,621099.6000,0.0000,-0.6000,4372767.0000"
+32,WUI_14791_SE,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,621406.8000,0.0000,-0.6000,4372777.2000"
+33,WUI_35676_NW,2018,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,439780.2000,0.0000,-0.6000,3914235.0000"
+34,WUI_35676_NE,2018,full,WUI,Intermix,WUI,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,440087.4000,0.0000,-0.6000,3914225.4000"
+35,WUI_32211_NW,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,363452.4000,0.0000,-0.6000,3806421.0000"
+36,WUI_33967_NW,2016,full,WUI,Interface,WUI,Mojave Basin and Range,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,396093.0000,0.0000,-0.6000,3822774.0000"
+37,WUI_4404_SE,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,517389.6000,0.0000,-0.6000,4501341.0000"
+38,WUI_16544_NW,2020,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,646025.4000,0.0000,-0.6000,4274137.8000"
+39,WUI_16544_SE,2020,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,646342.2000,0.0000,-0.6000,4273841.4000"
+40,WUI_34186_NW,2018,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,401332.8000,0.0000,-0.6000,3739279.8000"
+41,WUI_22121_SE,2018,full,WUI,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,695514.0000,0.0000,-0.6000,4312728.6000"
+42,WUI_45905_SW,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,561532.2000,0.0000,-0.6000,3673992.0000"
+43,WUI_45905_NW,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,561541.8000,0.0000,-0.6000,3674299.2000"
+44,WUI_45905_NE,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,561848.4000,0.0000,-0.6000,3674289.0000"
+45,WUI_2084_NW,2018,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,478763.4000,0.0000,-0.6000,4367662.2000"
+46,WUI_27762_NW,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,242879.4000,0.0000,-0.6000,3812665.2000"
+47,WUI_23407_NW,2020,full,WUI,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,705966.0000,0.0000,-0.6000,4276075.2000"
+48,WUI_4477_NW,2018,full,WUI,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,514546.2000,0.0000,-0.6000,4608413.4000"
+49,WUI_14476_NW,2018,full,WUI,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,615764.4000,0.0000,-0.6000,4403267.4000"
+50,WUI_24440_NW,2018,full,WUI,Urban,Urban,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,704878.8000,0.0000,-0.6000,4595578.2000"
+51,WUI_24440_NE,2018,full,WUI,Urban,Urban,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,705185.4000,0.0000,-0.6000,4595588.4000"
+52,WUI_8668_SW,2020,full,WUI,Interface,WUI,Cascades,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,557218.2000,0.0000,-0.6000,4575581.4000"
+53,WUI_8668_NE,2020,full,WUI,Interface,WUI,Cascades,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,557515.2000,0.0000,-0.6000,4575898.8000"
+54,WUI_25099_NE,2020,full,WUI,Interface,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,717720.6000,0.0000,-0.6000,4456106.4000"
+55,WUI_25099_SE,2020,full,WUI,Interface,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,717730.8000,0.0000,-0.6000,4455799.2000"
+56,WUI_39955_SW,2018,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,483574.8000,0.0000,-0.6000,3787629.0000"
+57,WUI_10133_NE,2018,full,WUI,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,579231.0000,0.0000,-0.6000,4197444.6000"
+58,WUI_32901_SE,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,376286.4000,0.0000,-0.6000,3790096.8000"
+59,WUI_35249_SW,2016,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,427708.2000,0.0000,-0.6000,3778093.2000"
+60,WUI_19178_SW,2018,full,WUI,Interface,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,668217.6000,0.0000,-0.6000,4340466.0000"
+61,WUI_23481_SW,2020,full,WUI,Wildland,Wildland,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,700150.8000,0.0000,-0.6000,4478658.6000"
+62,WUI_23481_NE,2020,full,WUI,Wildland,Wildland,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,700447.8000,0.0000,-0.6000,4478976.0000"
+63,WUI_45065_SE,2018,full,WUI,Intermix,WUI,Mojave Basin and Range,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,543676.2000,0.0000,-0.6000,3783984.6000"
+64,WUI_17721_NW,2018,full,WUI,Wildland,Wildland,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,648561.6000,0.0000,-0.6000,4567594.8000"
+65,WUI_17721_SE,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,648878.4000,0.0000,-0.6000,4567297.8000"
+66,WUI_10203_SW,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,572745.6000,0.0000,-0.6000,4417187.4000"
+67,WUI_10203_NE,2018,full,WUI,Interface,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,573042.6000,0.0000,-0.6000,4417504.2000"
+68,WUI_20490_NW,2018,full,WUI,Interface,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,672166.8000,0.0000,-0.6000,4562301.6000"
+69,WUI_20490_SE,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,672483.6000,0.0000,-0.6000,4562005.2000"
+70,WUI_37374_SW,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,460965.0000,0.0000,-0.6000,3758826.6000"
+71,WUI_33055_SW,2016,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,381293.4000,0.0000,-0.6000,3849823.2000"
+72,WUI_33525_NE,2018,full,WUI,Interface,WUI,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,391122.6000,0.0000,-0.6000,3876720.6000"
+73,WUI_25860_NW,2018,full,WUI,Intermix,WUI,Central Basin and Range,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,735097.8000,0.0000,-0.6000,4395041.4000"
+74,WUI_25860_SE,2018,full,WUI,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,735415.2000,0.0000,-0.6000,4394745.0000"
+75,WUI_38300_SW,2018,full,WUI,Interface,WUI,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,472134.6000,0.0000,-0.6000,3782781.0000"
+76,WUI_38300_NE,2018,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,472451.4000,0.0000,-0.6000,3783078.6000"
+77,WUI_19374_SE,2018,full,WUI,Interface,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,670063.8000,0.0000,-0.6000,4346598.6000"
+78,WUI_24247_NW,2020,full,WUI,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,707547.0000,0.0000,-0.6000,4465318.2000"
+79,WUI_24247_SE,2020,full,WUI,Intermix,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,707864.4000,0.0000,-0.6000,4465021.2000"
+80,WUI_41480_NE,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,491569.8000,0.0000,-0.6000,3728651.4000"
+81,WUI_45937_NE,2016,full,WUI,Intermix,WUI,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,562659.0000,0.0000,-0.6000,3672525.0000"
+82,WUI_8407_NE,2020,full,WUI,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,568971.0000,0.0000,-0.6000,4137312.0000"
+83,WUI_34560_NW,2016,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,415075.8000,0.0000,-0.6000,3818715.6000"
+84,WUI_27193_NW,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,227455.2000,0.0000,-0.6000,3820071.0000"
+85,WUI_3373_NW,2018,full,WUI,Wildland,Wildland,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,512332.8000,0.0000,-0.6000,4213528.2000"
+86,WUI_14907_SW,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,621736.8000,0.0000,-0.6000,4406625.0000"
+87,WUI_24614_SW,2020,full,WUI,Interface,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,710679.6000,0.0000,-0.6000,4475537.4000"
+88,WUI_24614_NE,2020,full,WUI,Interface,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,710976.6000,0.0000,-0.6000,4475854.8000"
+89,WUI_24614_SE,2020,full,WUI,Interface,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,710986.8000,0.0000,-0.6000,4475547.6000"
+90,WUI_10626_NE,2018,full,WUI,Interface,WUI,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,586629.6000,0.0000,-0.6000,4101465.6000"
+91,WUI_10626_SE,2018,full,WUI,Intermix,WUI,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,586639.8000,0.0000,-0.6000,4101159.0000"
+92,WUI_36796_SW,2018,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,453241.8000,0.0000,-0.6000,3789448.8000"
+93,WUI_36796_NW,2018,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,453251.4000,0.0000,-0.6000,3789756.0000"
+94,WUI_15675_NW,2018,full,WUI,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,632791.8000,0.0000,-0.6000,4387335.0000"
+95,WUI_45006_SE,2016,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,537859.8000,0.0000,-0.6000,3656508.0000"
+96,WUI_14523_NE,2018,full,WUI,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,616911.0000,0.0000,-0.6000,4404172.2000"
+97,WUI_44853_NW,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,532704.6000,0.0000,-0.6000,3640468.8000"
+98,WUI_26934_NW,2018,full,WUI,Interface,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,756113.3350,0.0000,-0.6000,4364490.7900"
+99,WUI_8777_NE,2020,full,WUI,Wildland,Wildland,Coast Range,Central California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,571687.2000,0.0000,-0.6000,4133931.0000"
+100,WUI_14422_NW,2018,full,WUI,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,614473.2000,0.0000,-0.6000,4416241.2000"
+101,WUI_14422_NE,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,614780.4000,0.0000,-0.6000,4416250.8000"
+102,WUI_45541_NW,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,551508.0000,0.0000,-0.6000,3658983.0000"
+103,WUI_10637_NW,2020,full,WUI,Interface,WUI,Cascades,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,572247.0000,0.0000,-0.6000,4566818.4000"
+104,WUI_10637_SE,2020,full,WUI,Wildland,Wildland,Cascades,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,572563.8000,0.0000,-0.6000,4566520.8000"
+105,WUI_45904_NW,2016,full,WUI,Interface,WUI,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,561570.0000,0.0000,-0.6000,3675167.4000"
+106,WUI_45904_SE,2016,full,WUI,Urban,Urban,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,561867.0000,0.0000,-0.6000,3674850.0000"
+107,WUI_19632_NW,2018,full,WUI,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,668529.0000,0.0000,-0.6000,4463150.4000"
+108,WUI_23689_SW,2020,full,WUI,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,708216.0000,0.0000,-0.6000,4287118.2000"
+109,WUI_32745_SW,2016,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,374282.4000,0.0000,-0.6000,3819667.8000"
+110,WUI_32745_SE,2016,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,374589.6000,0.0000,-0.6000,3819658.2000"
+111,WUI_26220_NW,2018,full,WUI,Intermix,WUI,Central Basin and Range,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,741552.6000,0.0000,-0.6000,4410015.6000"
+112,WUI_26220_NE,2018,full,WUI,Interface,WUI,Central Basin and Range,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,741860.4000,0.0000,-0.6000,4410025.8000"
+113,WUI_28550_SW,2018,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,265470.0000,0.0000,-0.6000,3812551.8000"
+114,WUI_14980_NW,2018,full,WUI,Interface,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,622848.6000,0.0000,-0.6000,4399159.2000"
+115,URB_1459,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-79387.0002,0.0000,-0.6000,-255231.3123"
+116,WUI_32607_NE,2016,full,WUI,Interface,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,372502.8000,0.0000,-0.6000,3836517.6000"
+117,WUI_24619_NE,2020,full,WUI,Intermix,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,711383.4000,0.0000,-0.6000,4463709.6000"
+118,WUI_14990_NW,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,623778.6000,0.0000,-0.6000,4370558.4000"
+119,WUI_14474_NE,2018,full,WUI,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,615620.4000,0.0000,-0.6000,4417146.0000"
+120,WUI_33185_NW,2018,full,WUI,Intermix,WUI,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,384121.2000,0.0000,-0.6000,3856983.6000"
+121,WUI_40836_SW,2018,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,488368.2000,0.0000,-0.6000,3774458.4000"
+122,WUI_40836_SE,2018,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,488675.4000,0.0000,-0.6000,3774448.8000"
+123,WUI_28123_SW,2018,full,WUI,Interface,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,251604.6000,0.0000,-0.6000,3813834.6000"
+124,WUI_17822_SW,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,649438.8000,0.0000,-0.6000,4567316.4000"
+125,WUI_35085_SW,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,423619.8000,0.0000,-0.6000,3758254.2000"
+126,WUI_35085_NE,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,423936.0000,0.0000,-0.6000,3758551.8000"
+127,WUI_14979_SW,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,622830.6000,0.0000,-0.6000,4399719.0000"
+128,WUI_33112_NW,2016,full,WUI,Intermix,WUI,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,381528.0000,0.0000,-0.6000,3829297.8000"
+129,WUI_24610_NW,2018,full,WUI,Wildland,Wildland,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,706434.0000,0.0000,-0.6000,4600849.2000"
+130,WUI_10853_NW,2020,full,WUI,Interface,WUI,Cascades,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,573923.4000,0.0000,-0.6000,4568610.6000"
+131,WUI_4222_NE,2018,full,WUI,Unknown,Unknown,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,512337.6000,0.0000,-0.6000,4605735.0000"
+132,WUI_34136_NW,2016,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,402678.0000,0.0000,-0.6000,3839056.8000"
+133,WUI_34136_SE,2016,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,402975.6000,0.0000,-0.6000,3838740.6000"
+134,WUI_46181_SE,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,581543.4000,0.0000,-0.6000,3666390.6000"
+135,WUI_33371_SW,2016,full,WUI,Interface,WUI,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,386886.6000,0.0000,-0.6000,3834031.8000"
+136,WUI_33371_NW,2016,full,WUI,Interface,WUI,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,386895.6000,0.0000,-0.6000,3834339.0000"
+137,WUI_33371_NE,2016,full,WUI,Urban,Urban,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,387202.8000,0.0000,-0.6000,3834329.4000"
+138,WUI_33371_SE,2016,full,WUI,Urban,Urban,Mojave Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,387193.8000,0.0000,-0.6000,3834022.8000"
+139,WUI_44763_SW,2016,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,530816.4000,0.0000,-0.6000,3662817.0000"
+140,WUI_23160_SW,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,693919.2000,0.0000,-0.6000,4586201.4000"
+141,WUI_23160_NE,2018,full,WUI,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,694215.6000,0.0000,-0.6000,4586518.8000"
+142,WUI_15000_SW,2018,full,WUI,Unknown,Unknown,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,625249.2000,0.0000,-0.6000,4325194.2000"
+143,WUI_15000_NW,2018,full,WUI,Interface,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,625239.0000,0.0000,-0.6000,4325501.4000"
+144,WUI_23271_SW,2018,full,WUI,Interface,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,694313.4000,0.0000,-0.6000,4600127.4000"
+145,WUI_10386_SW,2018,full,WUI,Intermix,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,574397.4000,0.0000,-0.6000,4419843.6000"
+146,WUI_19837_SE,2018,full,WUI,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,670581.6000,0.0000,-0.6000,4462911.0000"
+147,WUI_24698_SE,2018,full,WUI,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,714027.6000,0.0000,-0.6000,4410526.8000"
+148,WUI_9057_SW,2020,full,WUI,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,560266.2000,0.0000,-0.6000,4561777.2000"
+149,WUI_25812_NE,2018,full,WUI,Intermix,WUI,Central Basin and Range,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,734536.8000,0.0000,-0.6000,4395022.8000"
+150,WUI_14479_SW,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,615858.6000,0.0000,-0.6000,4400360.4000"
+151,WUI_14479_SE,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,616165.8000,0.0000,-0.6000,4400370.0000"
+152,WUI_24156_SW,2020,full,WUI,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,712418.4000,0.0000,-0.6000,4291592.4000"
+153,WUI_10192_NW,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,572148.6000,0.0000,-0.6000,4435698.0000"
+154,WUI_10192_NE,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,572455.8000,0.0000,-0.6000,4435707.6000"
+155,WUI_29196_SW,2018,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,289334.4000,0.0000,-0.6000,3797076.0000"
+156,WUI_33126_SE,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,380598.0000,0.0000,-0.6000,3789096.0000"
+157,WUI_9029_SE,2020,full,WUI,Wildland,Wildland,Coast Range,Central California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,573406.8000,0.0000,-0.6000,4134545.4000"
+158,WUI_4067_NE,2016,full,WUI,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,518557.8000,0.0000,-0.6000,4328159.4000"
+159,WUI_45491_SW,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,550687.8000,0.0000,-0.6000,3660439.8000"
+160,WUI_45491_NW,2016,full,WUI,Intermix,WUI,Sonoran Basin and Range,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,550697.4000,0.0000,-0.6000,3660747.0000"
+161,WUI_45491_NE,2016,full,WUI,Intermix,WUI,Sonoran Basin and Range,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,551004.0000,0.0000,-0.6000,3660736.8000"
+162,WUI_24341_SW,2018,full,WUI,Urban,Urban,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,704023.2000,0.0000,-0.6000,4595241.0000"
+163,WUI_24341_SE,2018,full,WUI,Interface,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,704329.8000,0.0000,-0.6000,4595251.8000"
+164,WUI_45585_SW,2016,full,WUI,Intermix,WUI,Sonoran Basin and Range,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,552420.6000,0.0000,-0.6000,3660384.0000"
+165,WUI_24246_NW,2020,full,WUI,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,707518.2000,0.0000,-0.6000,4466185.2000"
+166,WUI_17348_SE,2018,full,WUI,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,648862.2000,0.0000,-0.6000,4463061.6000"
+167,WUI_34714_SW,2018,full,WUI,Intermix,WUI,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,421647.6000,0.0000,-0.6000,3890210.4000"
+168,WUI_34714_NW,2018,full,WUI,Interface,WUI,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,421657.2000,0.0000,-0.6000,3890517.0000"
+169,URB_0142,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-80001.4002,0.0000,-0.6000,-303154.5123"
+170,WUI_46578_SW,2020,full,WUI,Intermix,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,649503.6000,0.0000,-0.6000,3737133.6000"
+171,WUI_46578_NW,2020,full,WUI,Intermix,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,649513.8000,0.0000,-0.6000,3737440.8000"
+172,WUI_46578_SE,2020,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,649810.8000,0.0000,-0.6000,3737123.4000"
+173,WUI_35157_SE,2016,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,426253.2000,0.0000,-0.6000,3777270.6000"
+174,WUI_5904_NW,2016,full,WUI,Wildland,Wildland,Coast Range,Central California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,544357.2000,0.0000,-0.6000,4163402.4000"
+175,WUI_35560_NE,2018,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,432582.0000,0.0000,-0.6000,3757415.4000"
+176,WUI_32112_SW,2016,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,360726.6000,0.0000,-0.6000,3774078.6000"
+177,WUI_32112_NE,2016,full,WUI,Interface,WUI,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,361043.4000,0.0000,-0.6000,3774376.2000"
+178,WUI_32112_SE,2016,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,361033.8000,0.0000,-0.6000,3774069.0000"
+179,WUI_20085_NW,2018,full,WUI,Interface,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,676390.8000,0.0000,-0.6000,4329762.0000"
+180,WUI_20085_SE,2018,full,WUI,Interface,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,676708.2000,0.0000,-0.6000,4329465.0000"
+181,WUI_27225_NE,2018,full,WUI,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,228528.0000,0.0000,-0.6000,3816565.2000"
+182,WUI_33579_SW,2018,full,WUI,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,391674.0000,0.0000,-0.6000,3876396.6000"
+183,WUI_45879_SW,2016,full,WUI,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,560665.8000,0.0000,-0.6000,3674020.2000"
+184,WUI_33266_SW,2018,full,WUI,Interface,WUI,Mojave Basin and Range,Limited mapping,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,385794.0000,0.0000,-0.6000,3854889.6000"
+185,WUI_16260_SW,2018,full,WUI,Intermix,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,642028.8000,0.0000,-0.6000,4317063.6000"
+186,WUI_16260_NW,2018,full,WUI,Interface,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,642019.2000,0.0000,-0.6000,4317370.2000"
+187,WUI_16260_NE,2018,full,WUI,Intermix,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,642326.4000,0.0000,-0.6000,4317380.4000"
+188,WUI_44382_SW,2016,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,521175.6000,0.0000,-0.6000,3659649.6000"
+189,WUI_44382_SE,2016,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,521482.2000,0.0000,-0.6000,3659640.0000"
+190,WUI_20587_NW,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,684264.0000,0.0000,-0.6000,4193856.0000"
+191,WUI_20587_NE,2018,full,WUI,Intermix,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,684571.8000,0.0000,-0.6000,4193865.6000"
+192,WUI_46635_SW,2020,full,WUI,Interface,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,710587.2000,0.0000,-0.6000,3720326.4000"
+193,WUI_46635_NW,2020,full,WUI,Interface,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,710597.4000,0.0000,-0.6000,3720633.6000"
+194,WUI_46635_NE,2020,full,WUI,Interface,WUI,Sonoran Basin and Range,Limited mapping,2020,pixel_exact,EPSG:26911,"0.6000,0.0000,710904.6000,0.0000,-0.6000,3720623.4000"
+195,WUI_690747_NE,2016,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,529626.0000,0.0000,-0.6000,3625766.4000"
+196,WUI_124819_NE,2016,full,WUI,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,529083.0000,0.0000,-0.6000,4319438.4000"
+197,WUI_609286_NW,2018,full,WUI,Interface,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,456642.0000,0.0000,-0.6000,3766704.6000"
+198,WUI_609286_NE,2018,full,WUI,Interface,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,456948.0000,0.0000,-0.6000,3766687.2000"
+199,WUI_26379_SW,2018,full,WUI,Urban,Urban,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,430775.4000,0.0000,-0.6000,4367131.2000"
+200,WUI_298424_SW,2018,full,WUI,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,701775.6000,0.0000,-0.6000,4406131.2000"
+201,WUI_298424_SE,2018,full,WUI,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,702082.8000,0.0000,-0.6000,4406131.2000"
+202,WUI_29411_SW,2018,full,WUI,Wildland,Wildland,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,433775.4000,0.0000,-0.6000,4347131.4000"
+203,WUI_306402_NW,2020,full,WUI,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,709775.4000,0.0000,-0.6000,4460438.4000"
+204,WUI_30415_SW,2018,full,WUI,Urban,Urban,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,434775.6000,0.0000,-0.6000,4347131.4000"
+205,WUI_28389_SW,2018,full,WUI,Intermix,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,432775.8000,0.0000,-0.6000,4365131.4000"
+206,WUI_28389_NW,2018,full,WUI,Intermix,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,432775.8000,0.0000,-0.6000,4365438.6000"
+207,WUI_697749_NE,2016,full,WUI,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,538059.6000,0.0000,-0.6000,3651214.2000"
+208,WUI_682706_NE,2016,full,WUI,Interface,WUI,Southern California/Northern Baja Coast,Southern California Region,2016,pixel_exact,EPSG:26911,"0.6000,0.0000,522182.4000,0.0000,-0.6000,3635166.6000"
+209,WUI_118577_NW,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,522775.8000,0.0000,-0.6000,4537438.2000"
+210,WUI_102454_SW,2018,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,506775.6000,0.0000,-0.6000,4596131.4000"
+211,WUI_259314_SE,2018,full,WUI,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,663082.8000,0.0000,-0.6000,4360131.0000"
+212,WUI_27383_SW,2018,full,WUI,Interface,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431775.6000,0.0000,-0.6000,4367131.2000"
+213,WUI_27383_NE,2018,full,WUI,Interface,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,432082.8000,0.0000,-0.6000,4367438.4000"
+214,WUI_102540_NW,2020,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,506775.6000,0.0000,-0.6000,4510438.2000"
+215,WUI_101533_SE,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,506082.6000,0.0000,-0.6000,4513131.0000"
+216,WUI_102539_SW,2020,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,506775.6000,0.0000,-0.6000,4511131.2000"
+217,WUI_102539_NE,2020,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,507082.8000,0.0000,-0.6000,4511438.4000"
+218,WUI_161844_SW,2018,full,WUI,Intermix,WUI,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,565775.4000,0.0000,-0.6000,4442131.2000"
+219,WUI_161844_NE,2018,full,WUI,Wildland,Wildland,Central California Valley,Not Mapped,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,566082.6000,0.0000,-0.6000,4442438.4000"
+220,WUI_120583_NW,2020,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,524775.6000,0.0000,-0.6000,4539438.6000"
+221,WUI_120583_NE,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,525082.8000,0.0000,-0.6000,4539438.6000"
+222,WUI_214448_SE,2018,full,WUI,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,618082.8000,0.0000,-0.6000,4046131.2000"
+223,WUI_183249_NW,2020,full,WUI,Interface,WUI,Coast Range,Central California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,586775.4000,0.0000,-0.6000,4121438.4000"
+224,WUI_27397_SE,2018,full,WUI,Wildland,Wildland,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,432082.8000,0.0000,-0.6000,4353131.4000"
+225,WUI_103456_NE,2018,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,508083.0000,0.0000,-0.6000,4598438.4000"
+226,WUI_120585_NW,2020,full,WUI,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,524775.6000,0.0000,-0.6000,4537438.2000"
+227,WUI_27384_NW,2018,full,WUI,Intermix,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431775.6000,0.0000,-0.6000,4366438.2000"
+228,WUI_129853_SW,2016,full,WUI,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,533775.6000,0.0000,-0.6000,4305131.4000"
+229,WUI_101536_NE,2020,full,WUI,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,506082.6000,0.0000,-0.6000,4510438.2000"
+230,WUI_120576_NE,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,525082.8000,0.0000,-0.6000,4546438.2000"
+231,WUI_26382_SE,2018,full,WUI,Intermix,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431082.6000,0.0000,-0.6000,4364131.2000"
+232,WUI_27403_SE,2016,full,WUI,Intermix,WUI,Coast Range,Northern California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,432082.8000,0.0000,-0.6000,4347131.4000"
+233,WUI_26397_NE,2016,full,WUI,Wildland,Wildland,Coast Range,Northern California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,431082.6000,0.0000,-0.6000,4349438.4000"
+234,WUI_122808_NE,2016,full,WUI,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:26910,"0.6000,0.0000,527082.6000,0.0000,-0.6000,4322438.4000"
+235,WUI_26380_SW,2018,full,WUI,Urban,Urban,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,430775.4000,0.0000,-0.6000,4366131.0000"
+236,WUI_26380_NE,2018,full,WUI,Urban,Urban,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431082.6000,0.0000,-0.6000,4366438.2000"
+237,WUI_191305_NW,2018,full,WUI,Intermix,WUI,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,594775.8000,0.0000,-0.6000,4097438.4000"
+238,WUI_100532_SW,2020,full,WUI,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,504775.8000,0.0000,-0.6000,4510131.0000"
+239,WUI_27386_NW,2018,full,WUI,Wildland,Wildland,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431775.6000,0.0000,-0.6000,4364438.4000"
+240,WUI_26393_NE,2018,full,WUI,Intermix,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431082.6000,0.0000,-0.6000,4353438.6000"
+241,WUI_188281_NW,2018,full,WUI,Intermix,WUI,Coast Range,Central California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,591775.8000,0.0000,-0.6000,4109438.4000"
+242,WUI_120587_NE,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,525082.8000,0.0000,-0.6000,4535438.4000"
+243,WUI_312428_NW,2020,full,WUI,Intermix,WUI,Central Basin and Range,Sierra Nevada Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,715775.4000,0.0000,-0.6000,4458438.6000"
+244,WUI_628397_NW,2018,full,WUI,Intermix,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,473507.4000,0.0000,-0.6000,3730773.6000"
+245,WUI_119579_SW,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,523775.4000,0.0000,-0.6000,4539131.4000"
+246,WUI_28408_NW,2018,full,WUI,Wildland,Wildland,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,432775.8000,0.0000,-0.6000,4346438.4000"
+247,WUI_627392_SW,2018,full,WUI,Interface,WUI,Southern California/Northern Baja Coast,Southern California Region,2018,pixel_exact,EPSG:26911,"0.6000,0.0000,472552.8000,0.0000,-0.6000,3731520.6000"
+248,WUI_26381_SW,2018,full,WUI,Interface,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,430775.4000,0.0000,-0.6000,4365131.4000"
+249,WUI_26381_SE,2018,full,WUI,Interface,WUI,Coast Range,Northern California Region,2018,pixel_exact,EPSG:26910,"0.6000,0.0000,431082.6000,0.0000,-0.6000,4365131.4000"
+250,WUI_120586_SE,2020,full,WUI,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,525082.8000,0.0000,-0.6000,4536131.4000"
+251,WUI_120573_SW,2020,full,WUI,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2020,pixel_exact,EPSG:26910,"0.6000,0.0000,524775.6000,0.0000,-0.6000,4549131.0000"
+252,WLD_461141_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+253,WLD_461141_NE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+254,WLD_461141_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+255,WLD_461141_EE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+256,WLD_458998_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+257,WLD_458998_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+258,WLD_282509_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+259,WLD_282509_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+260,WLD_282509_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+261,WLD_831801_NE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+262,WLD_486770_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+263,WLD_283230_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+264,WLD_283230_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+265,WLD_420575_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+266,WLD_413076_WW,2018,full,wildland,Intermix,WUI,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+267,WLD_488921_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+268,WLD_488921_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+269,WLD_488921_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+270,WLD_913015_NE,2020,full,wildland,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,image_match,,
+271,WLD_800728_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+272,WLD_800728_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+273,WLD_431738_SS,2018,full,wildland,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2018,image_match,,
+274,WLD_431738_WW,2018,full,wildland,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2018,image_match,,
+275,WLD_216931_SW,2020,full,wildland,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,image_match,,
+276,WLD_434971_NN,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+277,WLD_796554_NW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+278,WLD_796554_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+279,WLD_796554_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+280,WLD_318545_SW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+281,WLD_333416_SS,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+282,WLD_333416_EE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+283,WLD_333416_WW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+284,WLD_410937_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+285,WLD_837136_CE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+286,WLD_837136_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+287,WLD_414143_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+288,WLD_813643_CE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+289,WLD_813643_NE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+290,WLD_813643_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+291,WLD_813643_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+292,WLD_462205_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+293,WLD_462205_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+294,WLD_432836_WW,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+295,WLD_336737_SW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+296,WLD_332346_SW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+297,WLD_332346_EE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+298,WLD_332346_WW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+299,WLD_893770_SW,2020,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2020,image_match,,
+300,WLD_413075_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+301,WLD_484650_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+302,WLD_328156_NN,2022,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2022,image_match,,
+303,WLD_492126_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+304,WLD_465431_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+305,WLD_464343_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+306,WLD_464343_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+307,WLD_464343_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+308,WLD_464363_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+309,WLD_464363_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+310,WLD_821120_NE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+311,WLD_821120_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+312,WLD_821120_NN,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+313,WLD_478232_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+314,WLD_478232_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+315,WLD_478232_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+316,WLD_799755_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+317,WLD_799755_NN,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+318,WLD_799755_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+319,WLD_799755_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+320,WLD_775196_SW,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+321,WLD_775196_SS,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+322,WLD_775196_EE,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+323,WLD_775196_WW,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+324,WLD_281441_SS,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+325,WLD_468635_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+326,WLD_486777_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+327,WLD_486777_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+328,WLD_486777_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+329,WLD_470749_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+330,WLD_470749_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+331,WLD_412005_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+332,WLD_369740_CE,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+333,WLD_369740_NE,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+334,WLD_369740_SS,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+335,WLD_802861_SE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+336,WLD_802861_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+337,WLD_802861_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+338,WLD_830728_SE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+339,WLD_165809_SE,2018,full,wildland,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2018,image_match,,
+340,WLD_261139_NE,2020,full,wildland,Wildland,Wildland,Coast Range,Central California Region,2020,image_match,,
+341,WLD_805104_SE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+342,WLD_805104_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+343,WLD_805104_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+344,WLD_479313_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+345,WLD_321746_SS,2018,full,wildland,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+346,WLD_321746_EE,2018,full,wildland,Intermix,WUI,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+347,WLD_413090_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+348,WLD_805098_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+349,WLD_805098_NN,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+350,WLD_805098_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+351,WLD_166880_NN,2018,full,wildland,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2018,image_match,,
+352,WLD_821121_NW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+353,WLD_821121_NE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+354,WLD_821121_SE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+355,WLD_821121_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+356,WLD_821121_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+357,WLD_800825_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+358,WLD_416279_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+359,WLD_416279_SW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+360,WLD_283239_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+361,WLD_289990_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+362,WLD_472886_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+363,WLD_457935_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+364,WLD_280374_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+365,WLD_462227_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+366,WLD_462227_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+367,WLD_462227_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+368,WLD_222268_EE,2020,full,wildland,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,image_match,,
+369,WLD_953573_SW,2020,full,wildland,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,image_match,,
+370,WLD_953573_NN,2020,full,wildland,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,image_match,,
+371,WLD_468630_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+372,WLD_468630_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+373,WLD_901258_CE,2020,full,wildland,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,image_match,,
+374,WLD_319892_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+375,WLD_319892_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+376,WLD_319892_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+377,WLD_319892_EE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+378,WLD_319892_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+379,WLD_487843_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+380,WLD_470760_SE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+381,WLD_330219_CE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+382,WLD_330219_NE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+383,WLD_330219_SE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+384,WLD_303855_NW,2020,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2020,image_match,,
+385,WLD_426389_EE,2018,full,wildland,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2018,image_match,,
+386,WLD_260070_SW,2020,full,wildland,Intermix,WUI,Coast Range,Central California Region,2020,image_match,,
+387,WLD_472884_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+388,WLD_472884_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+389,WLD_332417_WW,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+390,WLD_417348_SW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+391,WLD_417348_SE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+392,WLD_417348_SS,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+393,WLD_417348_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+394,WLD_459023_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+395,WLD_464341_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+396,WLD_404540_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+397,WLD_456889_NN,2018,full,wildland,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,image_match,,
+398,WLD_769854_SE,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+399,WLD_483573_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+400,WLD_483573_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+401,WLD_799746_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+402,WLD_334572_SE,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+403,WLD_829663_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+404,WLD_485721_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+405,WLD_485721_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+406,WLD_485721_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+407,WLD_485721_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+408,WLD_807235_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+409,WLD_818980_CE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+410,WLD_818980_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+411,WLD_498519_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+412,WLD_333430_NE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+413,WLD_333430_SE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+414,WLD_470751_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+415,WLD_463295_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+416,WLD_487846_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+417,WLD_487846_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+418,WLD_799744_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+419,WLD_799744_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+420,WLD_799744_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+421,WLD_352658_SW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+422,WLD_492125_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+423,WLD_492125_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+424,WLD_492125_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+425,WLD_913013_NN,2020,full,wildland,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,image_match,,
+426,WLD_471817_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+427,WLD_498520_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+428,WLD_498520_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+429,WLD_461144_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+430,WLD_461144_NE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+431,WLD_780529_SE,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+432,WLD_265413_WW,2020,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2020,image_match,,
+433,WLD_895908_SS,2020,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2020,image_match,,
+434,WLD_322813_NE,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+435,WLD_323872_NN,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+436,WLD_331282_NN,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+437,WLD_331282_WW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+438,WLD_488923_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+439,WLD_488923_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+440,WLD_488923_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+441,WLD_455795_SS,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+442,WLD_492127_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+443,WLD_492127_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+444,WLD_287501_NE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+445,WLD_287501_EE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+446,WLD_321750_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+447,WLD_827524_NE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+448,WLD_421642_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+449,WLD_432806_SS,2018,full,wildland,Wildland,Wildland,Central Basin and Range,Sierra Nevada Region,2018,image_match,,
+450,WLD_278962_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+451,WLD_489988_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+452,WLD_452614_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+453,WLD_292805_NN,2020,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2020,image_match,,
+454,WLD_292805_EE,2020,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2020,image_match,,
+455,WLD_778400_NW,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+456,WLD_778400_EE,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+457,WLD_798685_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+458,WLD_798685_NN,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+459,WLD_798685_EE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+460,WLD_779465_WW,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+461,WLD_452617_SW,2018,full,wildland,Wildland,Wildland,Southern California/Northern Baja Coast,Southern California Region,2018,image_match,,
+462,WLD_324953_SE,2018,full,wildland,Wildland,Wildland,Sierra Nevada,Sierra Nevada Region,2018,image_match,,
+463,WLD_786945_NE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+464,WLD_786945_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,location_match,,
+465,WLD_493190_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+466,WLD_493190_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+467,WLD_493190_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+468,WLD_333415_NW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+469,WLD_333415_NN,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+470,WLD_333415_SS,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+471,WLD_282512_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+472,WLD_282512_SW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2018,image_match,,
+473,WLD_783740_NW,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+474,WLD_783740_SE,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+475,WLD_489994_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+476,WLD_455796_SS,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+477,WLD_455796_EE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+478,WLD_838204_NW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+479,WLD_486667_SE,2020,full,wildland,Wildland,Wildland,Central California Valley,Not Mapped,2020,image_match,,
+480,WLD_486667_SS,2020,full,wildland,Wildland,Wildland,Central California Valley,Not Mapped,2020,image_match,,
+481,WLD_486667_WW,2020,full,wildland,Wildland,Wildland,Central California Valley,Not Mapped,2020,image_match,,
+482,WLD_956777_NW,2020,full,wildland,Wildland,Wildland,Sonoran Basin and Range,Limited mapping,2020,image_match,,
+483,WLD_250445_NE,2020,full,wildland,Wildland,Wildland,Coast Range,Central California Region,2020,image_match,,
+484,WLD_797616_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+485,WLD_488906_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+486,WLD_488906_SE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+487,WLD_488906_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+488,WLD_189229_WW,2020,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2020,image_match,,
+489,WLD_478234_NW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+490,WLD_478234_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+491,WLD_478234_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+492,WLD_478234_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+493,WLD_478234_WW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,location_match,,
+494,WLD_331288_NW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+495,WLD_456887_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+496,WLD_456887_EE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+497,WLD_465409_NE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+498,WLD_276831_NE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+499,WLD_332348_NW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+500,WLD_332348_SS,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+501,WLD_332348_WW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+502,WLD_281101_CE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+503,WLD_281101_NW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+504,WLD_281101_NE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+505,WLD_281101_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+506,WLD_193467_CE,2020,full,wildland,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,image_match,,
+507,WLD_193467_SW,2020,full,wildland,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2020,image_match,,
+508,WLD_286433_SS,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+509,WLD_286433_EE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,image_match,,
+510,WLD_461137_SS,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+511,WLD_450471_SW,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+512,WLD_471828_WW,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+513,WLD_332347_EE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+514,WLD_805099_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+515,WLD_487838_CE,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+516,WLD_487838_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+517,WLD_491048_SS,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+518,WLD_331281_NW,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+519,WLD_331281_SE,2018,full,wildland,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,image_match,,
+520,WLD_403473_NN,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+521,WLD_465410_NN,2018,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2018,image_match,,
+522,WLD_473965_SE,2018,full,wildland,Wildland,Wildland,Central California Foothills and Coastal Mountains,Southern California Region,2018,image_match,,
+523,WLD_799762_CE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+524,WLD_799762_NW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+525,WLD_799762_SW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+526,WLD_799762_SE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+527,WLD_799762_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+528,WLD_799762_WW,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Southern California Region,2016,image_match,,
+529,WLD_652365_SS,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+530,WLD_652365_WW,2016,full,wildland,Wildland,Wildland,Southern California Mountains,Southern California Region,2016,image_match,,
+531,WLD_832859_CE,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+532,WLD_832859_SS,2016,full,wildland,Wildland,Wildland,Mojave Basin and Range,Limited mapping,2016,image_match,,
+533,URB_0121,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-45595.0002,0.0000,-0.6000,-326194.5123"
+534,URB_0353,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198354.9778,0.0000,-0.6000,22421.0601"
+535,URB_0026,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-228843.5359,0.0000,-0.6000,270202.8483"
+536,URB_0279,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-78772.6002,0.0000,-0.6000,-251852.1123"
+537,URB_0189,2018,building_only,urban,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-151429.1359,0.0000,-0.6000,293242.8483"
+538,URB_0387,2018,building_only,urban,Interface,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-139448.3359,0.0000,-0.6000,319969.2483"
+539,URB_0241,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62183.8002,0.0000,-0.6000,-276428.1123"
+540,URB_1126,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-203270.1778,0.0000,-0.6000,35630.6601"
+541,URB_0070,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-211257.3778,0.0000,-0.6000,39624.2601"
+542,URB_1089,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-52660.6002,0.0000,-0.6000,-320357.7123"
+543,URB_0030,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-201119.7778,0.0000,-0.6000,48533.0601"
+544,URB_0219,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-56654.2002,0.0000,-0.6000,-285029.7123"
+545,URB_1104,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-55425.4002,0.0000,-0.6000,-320664.9123"
+546,URB_1225,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199966.7359,0.0000,-0.6000,298465.2483"
+547,URB_1439,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-199583.7778,0.0000,-0.6000,35323.4601"
+548,URB_1065,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-198737.9359,0.0000,-0.6000,287713.2483"
+549,URB_0382,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60647.8002,0.0000,-0.6000,-301311.3123"
+550,URB_0323,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-203577.3778,0.0000,-0.6000,40853.0601"
+551,URB_0587,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-192593.9359,0.0000,-0.6000,276654.0483"
+552,URB_0954,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-194437.1359,0.0000,-0.6000,298465.2483"
+553,URB_0776,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-57575.8002,0.0000,-0.6000,-310527.3123"
+554,URB_0166,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-181227.5359,0.0000,-0.6000,300308.4483"
+555,URB_0007,2018,building_only,urban,Wildland,Wildland,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-114565.1359,0.0000,-0.6000,337786.8483"
+556,URB_0582,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-194744.3359,0.0000,-0.6000,289556.4483"
+557,URB_1032,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-207953.9359,0.0000,-0.6000,288942.0483"
+558,URB_0270,2018,building_only,urban,Interface,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-140677.1359,0.0000,-0.6000,319662.0483"
+559,URB_0199,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-41601.4002,0.0000,-0.6000,-323429.7123"
+560,URB_0311,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195051.5359,0.0000,-0.6000,279726.0483"
+561,URB_0040,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-69863.8002,0.0000,-0.6000,-265676.1123"
+562,URB_1310,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-207032.3359,0.0000,-0.6000,277575.6483"
+563,URB_0816,2018,building_only,urban,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-120094.7359,0.0000,-0.6000,335636.4483"
+564,URB_1656,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-75086.2002,0.0000,-0.6000,-298546.5123"
+565,URB_1144,2018,building_only,urban,Interface,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-140062.7359,0.0000,-0.6000,319354.8483"
+566,URB_0950,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-225081.3778,0.0000,-0.6000,66965.0601"
+567,URB_0874,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-63105.4002,0.0000,-0.6000,-250930.5123"
+568,URB_0475,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195051.5359,0.0000,-0.6000,278190.0483"
+569,URB_0188,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-84302.2002,0.0000,-0.6000,-257996.1123"
+570,URB_0616,2018,building_only,urban,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-201809.9359,0.0000,-0.6000,321505.2483"
+571,URB_1366,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60647.8002,0.0000,-0.6000,-280728.9123"
+572,URB_0160,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-223313.9359,0.0000,-0.6000,278497.2483"
+573,URB_1289,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189521.9359,0.0000,-0.6000,267745.2483"
+574,URB_1713,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62798.2002,0.0000,-0.6000,-265983.3123"
+575,URB_1076,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-45287.8002,0.0000,-0.6000,-331109.7123"
+576,URB_0348,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195973.1359,0.0000,-0.6000,284334.0483"
+577,URB_0480,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-202731.5359,0.0000,-0.6000,296622.0483"
+578,URB_0014,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-214022.1778,0.0000,-0.6000,56213.0601"
+579,URB_1644,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198047.7778,0.0000,-0.6000,32251.4601"
+580,URB_0969,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-59419.0002,0.0000,-0.6000,-266904.9123"
+581,URB_0501,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-63412.6002,0.0000,-0.6000,-277964.1123"
+582,URB_0408,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-214022.1778,0.0000,-0.6000,56520.2601"
+583,URB_0386,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-197740.5778,0.0000,-0.6000,22113.8601"
+584,URB_1034,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-65870.2002,0.0000,-0.6000,-273048.9123"
+585,URB_0356,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199352.3359,0.0000,-0.6000,289249.2483"
+586,URB_1049,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-67099.0002,0.0000,-0.6000,-267212.1123"
+587,URB_0720,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-82459.0002,0.0000,-0.6000,-284722.5123"
+588,URB_1241,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-53889.4002,0.0000,-0.6000,-319436.1123"
+589,URB_0450,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198969.3778,0.0000,-0.6000,21806.6601"
+590,URB_0243,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-63719.8002,0.0000,-0.6000,-298853.7123"
+591,URB_0655,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-204881.9359,0.0000,-0.6000,275732.4483"
+592,URB_0613,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196894.7359,0.0000,-0.6000,266516.4483"
+593,URB_1097,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-44059.0002,0.0000,-0.6000,-330802.5123"
+594,URB_0457,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198662.1778,0.0000,-0.6000,24571.4601"
+595,URB_0389,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62183.8002,0.0000,-0.6000,-266597.7123"
+596,URB_0406,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-47745.4002,0.0000,-0.6000,-332031.3123"
+597,URB_0683,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-197509.1359,0.0000,-0.6000,272046.0483"
+598,URB_0157,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-49895.8002,0.0000,-0.6000,-264447.3123"
+599,URB_1093,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-61262.2002,0.0000,-0.6000,-267519.3123"
+600,URB_0165,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-209414.1778,0.0000,-0.6000,32865.8601"
+601,URB_0699,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-197816.3359,0.0000,-0.6000,274196.4483"
+602,URB_0958,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-68635.0002,0.0000,-0.6000,-285336.9123"
+603,URB_0484,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199045.1359,0.0000,-0.6000,276961.2483"
+604,URB_0153,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-45287.8002,0.0000,-0.6000,-327423.3123"
+605,URB_1055,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-197509.1359,0.0000,-0.6000,288020.4483"
+606,URB_1781,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200812.5778,0.0000,-0.6000,32251.4601"
+607,URB_0955,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60340.6002,0.0000,-0.6000,-263525.7123"
+608,URB_0868,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-54811.0002,0.0000,-0.6000,-291788.1123"
+609,URB_0716,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199966.7359,0.0000,-0.6000,277575.6483"
+610,URB_0063,2018,building_only,urban,Intermix,WUI,Klamath Mountains/California High North Coast Range,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-176312.3359,0.0000,-0.6000,305530.8483"
+611,URB_0233,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-202731.5359,0.0000,-0.6000,284948.4483"
+612,URB_0964,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-203577.3778,0.0000,-0.6000,35630.6601"
+613,URB_1134,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-197740.5778,0.0000,-0.6000,32558.6601"
+614,URB_0553,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-55732.6002,0.0000,-0.6000,-291788.1123"
+615,URB_0706,2018,building_only,urban,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199966.7359,0.0000,-0.6000,322426.8483"
+616,URB_0412,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-35764.6002,0.0000,-0.6000,-337868.1123"
+617,URB_0491,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-199583.7778,0.0000,-0.6000,35016.2601"
+618,URB_0053,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-213407.7778,0.0000,-0.6000,62971.4601"
+619,URB_0377,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-53275.0002,0.0000,-0.6000,-327116.1123"
+620,URB_1029,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200812.5778,0.0000,-0.6000,37473.8601"
+621,URB_0965,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60033.4002,0.0000,-0.6000,-281343.3123"
+622,URB_1213,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-204498.9778,0.0000,-0.6000,35630.6601"
+623,URB_0993,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196587.5359,0.0000,-0.6000,274810.8483"
+624,URB_1173,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-80615.8002,0.0000,-0.6000,-253388.1123"
+625,URB_1305,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196587.5359,0.0000,-0.6000,295700.4483"
+626,URB_0882,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-99355.0002,0.0000,-0.6000,-272127.3123"
+627,URB_1121,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60033.4002,0.0000,-0.6000,-263525.7123"
+628,URB_1052,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-194744.3359,0.0000,-0.6000,267130.8483"
+629,URB_0997,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-215865.3778,0.0000,-0.6000,57749.0601"
+630,URB_0433,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200505.3778,0.0000,-0.6000,36859.4601"
+631,URB_1307,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200505.3778,0.0000,-0.6000,37166.6601"
+632,URB_0566,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-52967.8002,0.0000,-0.6000,-261375.3123"
+633,URB_1922,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60340.6002,0.0000,-0.6000,-265983.3123"
+634,URB_0134,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-205113.3778,0.0000,-0.6000,42389.0601"
+635,URB_1006,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-43751.8002,0.0000,-0.6000,-329880.9123"
+636,URB_1578,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-61876.6002,0.0000,-0.6000,-301618.5123"
+637,URB_0770,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-200888.3359,0.0000,-0.6000,287713.2483"
+638,URB_1073,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196894.7359,0.0000,-0.6000,282798.0483"
+639,URB_1718,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195665.9359,0.0000,-0.6000,277575.6483"
+640,URB_1194,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-59111.8002,0.0000,-0.6000,-304997.7123"
+641,URB_1452,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-56961.4002,0.0000,-0.6000,-310527.3123"
+642,URB_1787,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62798.2002,0.0000,-0.6000,-250930.5123"
+643,URB_1111,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-204191.7778,0.0000,-0.6000,34401.8601"
+644,URB_1789,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-197509.1359,0.0000,-0.6000,284334.0483"
+645,URB_1517,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-194437.1359,0.0000,-0.6000,274810.8483"
+646,URB_1558,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-53889.4002,0.0000,-0.6000,-321893.7123"
+647,URB_0123,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-66177.4002,0.0000,-0.6000,-284108.1123"
+648,URB_0135,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-67406.2002,0.0000,-0.6000,-300389.7123"
+649,URB_0762,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-73550.2002,0.0000,-0.6000,-300696.9123"
+650,URB_0698,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-192286.7359,0.0000,-0.6000,293550.0483"
+651,URB_1566,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-58190.2002,0.0000,-0.6000,-318207.3123"
+652,URB_0513,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195358.7359,0.0000,-0.6000,280033.2483"
+653,URB_1786,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60033.4002,0.0000,-0.6000,-302847.3123"
+654,URB_1038,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-52660.6002,0.0000,-0.6000,-328037.7123"
+655,URB_0126,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-211871.7778,0.0000,-0.6000,56827.4601"
+656,URB_1000,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-200273.9359,0.0000,-0.6000,296314.8483"
+657,URB_0682,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-226310.1778,0.0000,-0.6000,66657.8601"
+658,URB_0780,2018,building_only,urban,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-201195.5359,0.0000,-0.6000,321812.4483"
+659,URB_0225,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-64948.6002,0.0000,-0.6000,-274892.1123"
+660,URB_0286,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-56654.2002,0.0000,-0.6000,-310220.1123"
+661,URB_0818,2018,building_only,urban,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-137297.9359,0.0000,-0.6000,323655.6483"
+662,URB_0194,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-76929.4002,0.0000,-0.6000,-288101.7123"
+663,URB_1264,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-75086.2002,0.0000,-0.6000,-272127.3123"
+664,URB_0977,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-61569.4002,0.0000,-0.6000,-267212.1123"
+665,URB_0489,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-51739.0002,0.0000,-0.6000,-330188.1123"
+666,URB_1047,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199659.5359,0.0000,-0.6000,292935.6483"
+667,URB_0474,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-99355.0002,0.0000,-0.6000,-267212.1123"
+668,URB_0594,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-205803.5359,0.0000,-0.6000,291399.6483"
+669,URB_0527,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-197740.5778,0.0000,-0.6000,26107.4601"
+670,URB_0393,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-59419.0002,0.0000,-0.6000,-284108.1123"
+671,URB_0187,2018,building_only,urban,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-169861.1359,0.0000,-0.6000,275732.4483"
+672,URB_0293,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-67099.0002,0.0000,-0.6000,-313906.5123"
+673,URB_0591,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195358.7359,0.0000,-0.6000,286791.6483"
+674,URB_0975,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-65563.0002,0.0000,-0.6000,-253388.1123"
+675,URB_1543,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-65563.0002,0.0000,-0.6000,-252773.7123"
+676,URB_0238,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198662.1778,0.0000,-0.6000,29179.4601"
+677,URB_0768,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-61569.4002,0.0000,-0.6000,-263218.5123"
+678,URB_0055,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-201426.9778,0.0000,-0.6000,29793.8601"
+679,URB_1058,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-203577.3778,0.0000,-0.6000,37781.0601"
+680,URB_0476,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-48359.8002,0.0000,-0.6000,-330495.3123"
+681,URB_1041,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200812.5778,0.0000,-0.6000,35323.4601"
+682,URB_0525,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-200888.3359,0.0000,-0.6000,292935.6483"
+683,URB_1123,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-211333.1359,0.0000,-0.6000,280340.4483"
+684,URB_0009,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-203653.1359,0.0000,-0.6000,271124.4483"
+685,URB_0799,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-190750.7359,0.0000,-0.6000,286484.4483"
+686,URB_0162,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-205189.1359,0.0000,-0.6000,284641.2483"
+687,URB_0077,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-199276.5778,0.0000,-0.6000,30101.0601"
+688,URB_0234,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62491.0002,0.0000,-0.6000,-281650.5123"
+689,URB_1174,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-65255.8002,0.0000,-0.6000,-272741.7123"
+690,URB_0075,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-210718.7359,0.0000,-0.6000,280340.4483"
+691,URB_0422,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-199583.7778,0.0000,-0.6000,33787.4601"
+692,URB_0423,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-201119.7778,0.0000,-0.6000,36552.2601"
+693,URB_0050,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-8731.0002,0.0000,-0.6000,-293631.3123"
+694,URB_0435,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199659.5359,0.0000,-0.6000,287713.2483"
+695,URB_0229,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199352.3359,0.0000,-0.6000,276961.2483"
+696,URB_0350,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-79079.8002,0.0000,-0.6000,-251544.9123"
+697,URB_0317,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198969.3778,0.0000,-0.6000,22113.8601"
+698,URB_1100,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-57575.8002,0.0000,-0.6000,-307148.1123"
+699,URB_0883,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-68635.0002,0.0000,-0.6000,-283493.7123"
+700,URB_0326,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-61569.4002,0.0000,-0.6000,-277349.7123"
+701,URB_0115,2018,building_only,urban,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-147742.7359,0.0000,-0.6000,278190.0483"
+702,URB_0072,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-214405.1359,0.0000,-0.6000,270202.8483"
+703,URB_0441,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189214.7359,0.0000,-0.6000,282798.0483"
+704,URB_0236,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-19483.0002,0.0000,-0.6000,-277349.7123"
+705,URB_0532,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-211564.5778,0.0000,-0.6000,55291.4601"
+706,URB_0928,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-55118.2002,0.0000,-0.6000,-322200.9123"
+707,URB_1435,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-205803.5359,0.0000,-0.6000,286177.2483"
+708,URB_0248,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-201195.5359,0.0000,-0.6000,292935.6483"
+709,URB_0952,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-97204.6002,0.0000,-0.6000,-273970.5123"
+710,URB_0161,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-203345.9359,0.0000,-0.6000,296622.0483"
+711,URB_0341,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-201809.9359,0.0000,-0.6000,282798.0483"
+712,URB_0074,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-202117.1359,0.0000,-0.6000,267438.0483"
+713,URB_0586,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195973.1359,0.0000,-0.6000,296007.6483"
+714,URB_0329,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196587.5359,0.0000,-0.6000,284334.0483"
+715,URB_0774,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-201502.7359,0.0000,-0.6000,280033.2483"
+716,URB_1028,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-203345.9359,0.0000,-0.6000,287098.8483"
+717,URB_0354,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-206956.5778,0.0000,-0.6000,44846.6601"
+718,URB_1095,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189829.1359,0.0000,-0.6000,289556.4483"
+719,URB_0434,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198662.1778,0.0000,-0.6000,24878.6601"
+720,URB_0481,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60647.8002,0.0000,-0.6000,-307455.3123"
+721,URB_1798,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-205420.5778,0.0000,-0.6000,45461.0601"
+722,URB_0778,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-99662.2002,0.0000,-0.6000,-271820.1123"
+723,URB_0212,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-53889.4002,0.0000,-0.6000,-329573.7123"
+724,URB_1438,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-80615.8002,0.0000,-0.6000,-254002.5123"
+725,URB_0052,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-162488.3359,0.0000,-0.6000,270202.8483"
+726,URB_0231,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-186449.9359,0.0000,-0.6000,295700.4483"
+727,URB_0627,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-190443.5359,0.0000,-0.6000,298772.4483"
+728,URB_1393,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-63719.8002,0.0000,-0.6000,-277042.5123"
+729,URB_1071,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-76929.4002,0.0000,-0.6000,-293631.3123"
+730,URB_0937,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62798.2002,0.0000,-0.6000,-316364.1123"
+731,URB_0346,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-204806.1778,0.0000,-0.6000,33787.4601"
+732,URB_0593,2018,building_only,urban,Interface,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189214.7359,0.0000,-0.6000,305838.0483"
+733,URB_1885,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-66791.8002,0.0000,-0.6000,-259839.3123"
+734,URB_0425,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-41908.6002,0.0000,-0.6000,-334181.7123"
+735,URB_0325,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-188600.3359,0.0000,-0.6000,284641.2483"
+736,URB_1716,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-53889.4002,0.0000,-0.6000,-322815.3123"
+737,URB_0510,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199352.3359,0.0000,-0.6000,288327.6483"
+738,URB_0430,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-199583.7778,0.0000,-0.6000,34709.0601"
+739,URB_0205,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-46209.4002,0.0000,-0.6000,-320357.7123"
+740,URB_0785,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-34228.6002,0.0000,-0.6000,-262604.1123"
+741,URB_1823,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-203270.1778,0.0000,-0.6000,37781.0601"
+742,URB_0235,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-53889.4002,0.0000,-0.6000,-325887.3123"
+743,URB_0783,2018,building_only,urban,Interface,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-121323.5359,0.0000,-0.6000,332871.6483"
+744,URB_1455,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-67713.4002,0.0000,-0.6000,-257381.7123"
+745,URB_1323,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196587.5359,0.0000,-0.6000,285870.0483"
+746,URB_0540,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-211257.3778,0.0000,-0.6000,52219.4601"
+747,URB_0360,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-75086.2002,0.0000,-0.6000,-268133.7123"
+748,URB_0515,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198662.1778,0.0000,-0.6000,25493.0601"
+749,URB_1072,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189521.9359,0.0000,-0.6000,283719.6483"
+750,URB_0518,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60033.4002,0.0000,-0.6000,-269055.3123"
+751,URB_1742,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60340.6002,0.0000,-0.6000,-301925.7123"
+752,URB_0084,2018,building_only,urban,Wildland,Wildland,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-162181.1359,0.0000,-0.6000,291399.6483"
+753,URB_0956,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-201426.9778,0.0000,-0.6000,36552.2601"
+754,URB_1815,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-200581.1359,0.0000,-0.6000,280647.6483"
+755,URB_0421,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-199276.5778,0.0000,-0.6000,22113.8601"
+756,URB_1507,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-44980.6002,0.0000,-0.6000,-331724.1123"
+757,URB_1119,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60955.0002,0.0000,-0.6000,-282264.9123"
+758,URB_0949,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-57883.0002,0.0000,-0.6000,-283800.9123"
+759,URB_0970,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198662.1778,0.0000,-0.6000,32558.6601"
+760,URB_1783,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-196511.7778,0.0000,-0.6000,19963.4601"
+761,URB_0079,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200505.3778,0.0000,-0.6000,39317.0601"
+762,URB_0802,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199045.1359,0.0000,-0.6000,296622.0483"
+763,URB_0216,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-58804.6002,0.0000,-0.6000,-303768.9123"
+764,URB_1770,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-201426.9778,0.0000,-0.6000,33480.2601"
+765,URB_0128,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-211871.7778,0.0000,-0.6000,68501.0601"
+766,URB_0066,2016,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-33307.0002,0.0000,-0.6000,-324351.3123"
+767,URB_0215,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-203038.7359,0.0000,-0.6000,292935.6483"
+768,URB_0561,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-202731.5359,0.0000,-0.6000,299386.8483"
+769,URB_0355,2018,building_only,urban,Intermix,WUI,Eastern Cascades Slopes and Foothills,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-119787.5359,0.0000,-0.6000,335943.6483"
+770,URB_0693,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-193515.5359,0.0000,-0.6000,299079.6483"
+771,URB_1069,2016,building_only,urban,Unknown,Unknown,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-55425.4002,0.0000,-0.6000,-321586.5123"
+772,URB_0632,2018,building_only,urban,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-185528.3359,0.0000,-0.6000,310753.2483"
+773,URB_0080,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-211947.5359,0.0000,-0.6000,270817.2483"
+774,URB_0299,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-54811.0002,0.0000,-0.6000,-320357.7123"
+775,URB_0168,2018,building_only,urban,Wildland,Wildland,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-201809.9359,0.0000,-0.6000,336865.2483"
+776,URB_0334,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-57883.0002,0.0000,-0.6000,-308376.9123"
+777,URB_0880,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-198123.5359,0.0000,-0.6000,284026.8483"
+778,URB_0612,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-195358.7359,0.0000,-0.6000,295700.4483"
+779,URB_1446,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-56654.2002,0.0000,-0.6000,-310834.5123"
+780,URB_0971,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-58497.4002,0.0000,-0.6000,-306226.5123"
+781,URB_1827,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-76315.0002,0.0000,-0.6000,-298239.3123"
+782,URB_0697,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-63105.4002,0.0000,-0.6000,-310527.3123"
+783,URB_0866,2018,building_only,urban,Intermix,WUI,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-140677.1359,0.0000,-0.6000,318740.4483"
+784,URB_0738,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-197509.1359,0.0000,-0.6000,274196.4483"
+785,URB_0064,2018,building_only,urban,Intermix,WUI,Klamath Mountains/California High North Coast Range,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-197201.9359,0.0000,-0.6000,317818.8483"
+786,URB_1275,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-43444.6002,0.0000,-0.6000,-330495.3123"
+787,URB_0782,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-202117.1359,0.0000,-0.6000,281262.0483"
+788,URB_1920,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-55732.6002,0.0000,-0.6000,-323736.9123"
+789,URB_0458,2018,building_only,urban,Urban,Urban,Cascades,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-143441.9359,0.0000,-0.6000,319354.8483"
+790,URB_0139,2018,building_only,urban,Wildland,Wildland,Central California Foothills and Coastal Mountains,Sierra Nevada Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-171397.1359,0.0000,-0.6000,303073.2483"
+791,URB_0432,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-196280.3359,0.0000,-0.6000,292628.4483"
+792,URB_0914,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-52046.2002,0.0000,-0.6000,-320664.9123"
+793,URB_1168,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-200812.5778,0.0000,-0.6000,36245.0601"
+794,URB_1421,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-202731.5359,0.0000,-0.6000,288327.6483"
+795,URB_0930,2016,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-60340.6002,0.0000,-0.6000,-281957.7123"
+796,URB_0487,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-198047.7778,0.0000,-0.6000,24878.6601"
+797,URB_1018,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189829.1359,0.0000,-0.6000,289863.6483"
+798,URB_0245,2018,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199966.7359,0.0000,-0.6000,287098.8483"
+799,URB_0461,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-189829.1359,0.0000,-0.6000,284641.2483"
+800,URB_0543,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-199352.3359,0.0000,-0.6000,288634.8483"
+801,URB_0394,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Northern California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-210642.9778,0.0000,-0.6000,51605.0601"
+802,URB_0630,2018,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-203653.1359,0.0000,-0.6000,272046.0483"
+803,URB_1541,2016,building_only,urban,Interface,WUI,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-62798.2002,0.0000,-0.6000,-263525.7123"
+804,URB_0239,2018,building_only,urban,Intermix,WUI,Central California Foothills and Coastal Mountains,Northern California Region,2018,pixel_exact,EPSG:6414,"0.6000,0.0000,-206417.9359,0.0000,-0.6000,290478.0483"
+805,URB_0623,2016,building_only,urban,Urban,Urban,Central California Foothills and Coastal Mountains,Central California Region,2016,pixel_exact,EPSG:6414,"0.6000,0.0000,-54503.8002,0.0000,-0.6000,-260760.9123"

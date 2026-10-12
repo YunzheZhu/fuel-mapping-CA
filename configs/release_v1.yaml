@@ -1,0 +1,92 @@
+# Release model v1 (fuelmap_unet_v1.pth, GitHub release v1.0.0)
+#
+# The release model was retrained in June 2024 on the paper's final training
+# split and reproduces the accuracy reported in the paper. This file records
+# the settings that were actually used to train it, as recovered from the
+# archived training code and run logs, plus the inference settings of the
+# paper. Where the original code behaved differently from what its option
+# names suggest, the comment says so.
+#
+#   training:   python scripts/train.py --config configs/release_v1.yaml [--train-images ... to override]
+#   prediction: python scripts/predict_naip.py --config configs/release_v1.yaml --weights fuelmap_unet_v1.pth ...
+#               python scripts/predict_tiles.py --config configs/release_v1.yaml --weights fuelmap_unet_v1.pth ...
+#
+# Paths below are placeholders relative to the repository; point them to your copy of the arrays.
+
+train:
+  # 4-year training array: 10,969 tile-years (LiDAR-matched NAIP year for all
+  # tiles, plus the other NAIP years 2016/2018/2020/2022 for WUI tiles).
+  # Images (N, 512, 512, 4) uint8 R, G, B, NIR; labels (N, 512, 512) uint8.
+  train_images: [data/TrainingData/NAIP_RGBN_06_4y_train_array.npz]
+  train_labels: [data/TrainingData/Label_NAIP_06_4y_train_array.npz]
+  val_images: [data/ValidationData/NAIP_RGBN_06_4y_validate_array.npz]     # 1,512 tile-years
+  val_labels: [data/ValidationData/Label_NAIP_06_4y_validate_array.npz]
+  test_images: [data/TestingData/NAIP_RGBN_06_4y_test_array.npz]           # 1,550 tile-years
+  test_labels: [data/TestingData/Label_NAIP_06_4y_test_array.npz]
+
+  # Label value 4 means "no label" in these arrays. The archived data loader
+  # one-hot encoded classes 0-3 plus value 5 as the ignored channel, so pixels
+  # coded 4 reached the loss as class 0 ("other"). 'other' reproduces that;
+  # use 'ignore' for new training.
+  unlabeled_value: 4
+  unlabeled_as: other
+
+  # Legacy 5-channel head: classes 0-3 plus an "unlabeled" channel with loss
+  # weight 0 that never receives a positive target (dropped at inference).
+  n_outputs: 5
+
+  epochs: 50                  # best epoch: 47
+  batch_size: 20              # split across GPUs with nn.DataParallel
+  data_parallel: true
+  lr: 1.0e-8                  # RMSprop; constant in practice (see scheduler)
+  weight_decay: 1.0e-6
+  momentum: 0.999
+  grad_clip: 1.0
+  class_weights: [0.4, 1.0, 1.1, 1.5]   # other, tree, shrub, building
+  # The original code created ReduceLROnPlateau(mode='max', patience=5) but
+  # stepped it with the test loss; at lr = 1e-8 its eps (1e-8) blocks every
+  # reduction, so the learning rate never changed.
+  scheduler: none
+  amp: false
+  seed: 2024
+
+  # Augmentation (training set only). The paper describes "scaling by +-20 %";
+  # the code used a nearest-neighbour resample round trip with a factor in
+  # [0.9, 1.11], which does not change the field of view.
+  hflip_p: 0.5
+  vflip_p: 0.5
+  rotate_p: 0.2
+  max_rotation: 45.0
+  scale_p: 0.2
+  scale_range: [0.9, 1.11]
+  rotate_label_fill: 0        # rotated-in corners became "other" in the original code; 255 (ignore) is recommended
+
+  # Model selection as done for the release model: after every epoch the
+  # checkpoint was kept if both the mean Dice (= mean F1) and the mIoU on the
+  # test split improved, with probability thresholds but without the NDVI gate.
+  # For new models select on the validation split (select_on: val).
+  select_on: test
+  select_metric: f1_and_miou
+  eval_rule: paper
+  eval_ndvi_min: -1           # negative = no NDVI gate during training-time evaluation
+
+  workers: 8
+  out_dir: runs/release_v1
+
+inference:
+  # Class decision rule used for the paper's test-tile accuracy assessment:
+  # tree if p_tree > 0.4 and NDVI > 0.11; shrub if p_shrub > 0.4 and NDVI > 0.11;
+  # building if p_building > 0.6; then other if p_other > 0.5 (applied last); else other.
+  # Probabilities are the softmax over all model outputs (channels 0-3 kept).
+  # The paper-era large-area maps used the same thresholds without the NDVI gate
+  # (--no-ndvi); the v2 Box maps come from a different model and rule.
+  rule: paper
+  tree_threshold: 0.4
+  shrub_threshold: 0.4
+  building_threshold: 0.6
+  other_threshold: 0.5
+  ndvi_min: 0.11
+  # Sliding window for large rasters (scripts/predict_naip.py)
+  tile_size: 1666             # about 1 km at 0.6 m
+  overlap: 0.25
+  blend: ramp

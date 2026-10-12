@@ -1,0 +1,126 @@
+{
+  "name": "fuelmap_unet_v1",
+  "version": "1.0.0",
+  "file": "fuelmap_unet_v1.pth",
+  "url": "https://github.com/YunzheZhu/fuel-mapping-CA/releases/download/v1.0.0/fuelmap_unet_v1.pth",
+  "size_bytes": 124238486,
+  "sha256": "35e9f387de0017e7cbddbdfc7fc8cbeb5645eb114a7fc03cdd8ab8acdde5706a",
+  "md5": "a77d54f00063d76d5343459ee3fada82",
+  "format": "PyTorch state_dict (plain keys, no 'module.' prefix); all floating-point tensors float32; load with torch.load(path, map_location='cpu', weights_only=True)",
+  "license": "CC BY 4.0",
+  "description": "Release model for Zhu, Dixon & Jin (2026), Remote Sensing of Environment 333, 115091. Retrained in June 2024 on the paper's training tiles (June 2024 version of the split, test tiles held out); it matches the paper's reported overall accuracy (87.0% vs 87.1%). It is the release model, not the exact checkpoint behind the paper's tables.",
+  "citation": "Zhu, Y., Dixon, D. J., & Jin, Y. (2026). Scalable sub-meter mapping of woody vegetation and structures across California's heterogeneous landscape using deep learning. Remote Sensing of Environment, 333, 115091. https://doi.org/10.1016/j.rse.2025.115091",
+  "architecture": {
+    "type": "U-Net (milesial/Pytorch-UNet layout)",
+    "bilinear": false,
+    "encoder_channels": [
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "n_channels": 4,
+    "n_classes": 5,
+    "n_parameters": 31038469,
+    "n_tensors": 118,
+    "output": "logits, shape (N, 5, H, W)"
+  },
+  "classes": {
+    "0": "other (background)",
+    "1": "tree",
+    "2": "shrub",
+    "3": "building",
+    "4": "legacy 'unlabeled' channel (never a training target; never predicted; drop at inference)"
+  },
+  "output_classes_used": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "input": {
+    "sensor": "NAIP 4-band aerial imagery",
+    "band_order": [
+      "R",
+      "G",
+      "B",
+      "NIR"
+    ],
+    "dtype": "uint8 digital numbers",
+    "scaling": "x / 255.0 (float32); no other normalization",
+    "layout": "NCHW",
+    "tile_size_px": 512,
+    "resolution_m": 0.6,
+    "tile_size_m": 307.2
+  },
+  "decision_rule_paper": {
+    "description": "softmax over the 5 logits, use channels 0-3; tree if p_tree > 0.4 and NDVI > 0.11; shrub if p_shrub > 0.4 and NDVI > 0.11; building if p_building > 0.6; then other if p_other > 0.5 (applied last, overrides); all remaining pixels other. NDVI = (NIR - R) / (NIR + R) computed on DN / 255 (0 where NIR + R = 0).",
+    "thresholds": {
+      "tree": 0.4,
+      "shrub": 0.4,
+      "building": 0.6,
+      "other": 0.5,
+      "ndvi_min_woody": 0.11
+    }
+  },
+  "training": {
+    "run_name": "UNet_RGBN_4y_II",
+    "trained": "2024-06",
+    "training_data": "4-year training array, 10,969 tile-years: 6,649 tiles at their LiDAR-matched NAIP year (1,725 urban building-only + 4,924 WUI/wildland; the June 2024 cut of the paper's training split, whose final version lists 7,015 training tiles) plus 4,320 rows of WUI tiles at the other NAIP years (2016/2018/2020/2022)",
+    "training_tile_years": 10969,
+    "batch_size": 20,
+    "epochs": 50,
+    "best_epoch": 47,
+    "global_step_at_best_epoch": 25803,
+    "checkpoint_selection": "last epoch at which Dice and mIoU on the test arrays both improved (rule of the training code)",
+    "loss": "cross-entropy, class weights [other 0.4, tree 1.0, shrub 1.1, building 1.5, unlabeled 0]; ignore_index 4 was set but never triggered (see unlabeled_pixels)",
+    "unlabeled_pixels": "no-label pixels (value 4 in the 2024 arrays, 255 in the release packages) were encoded as class 0 (other) by the archived training data loader, so they were trained as other with loss weight 0.4",
+    "multi_gpu": "trained with torch.nn.DataParallel; the 'module.' key prefix was removed for this release"
+  },
+  "evaluation_1y_test_array": {
+    "data": "806-tile one-year test array (pixels with label 'no label' ignored); rows = reference, columns = prediction; UA = precision, PA = recall",
+    "pixels": 146820802,
+    "paper_rule": {
+      "OA": 0.87,
+      "mIoU": 0.7353,
+      "mean_F1": 0.8461,
+      "F1_other_tree_shrub_building": [
+        0.9106,
+        0.8301,
+        0.8036,
+        0.8399
+      ],
+      "UA_other_tree_shrub_building": [
+        0.9592,
+        0.7882,
+        0.7452,
+        0.8083
+      ],
+      "PA_other_tree_shrub_building": [
+        0.8668,
+        0.8768,
+        0.8719,
+        0.874
+      ]
+    },
+    "argmax": {
+      "OA": 0.8596,
+      "mIoU": 0.7196,
+      "mean_F1": 0.8354,
+      "F1_other_tree_shrub_building": [
+        0.9008,
+        0.8283,
+        0.7874,
+        0.8253
+      ]
+    }
+  },
+  "provenance": {
+    "source_checkpoint": "best_checkpoint_epoch47.pth (DataParallel state_dict)",
+    "source_md5": "012343e8447a078d2f8ea581608fa9e7",
+    "source_sha256": "f2cc8d4562cdc668a86c26f1ed358a3df7beba3d177a757ae5393be4472084fa",
+    "conversion": "stripped 'module.' prefix, cast to float32, torch.save(state_dict); outputs verified bit-identical to the source checkpoint on 2 test tiles (array rows 0 and 400)",
+    "torch_version_used_for_conversion": "2.3.1"
+  }
+}

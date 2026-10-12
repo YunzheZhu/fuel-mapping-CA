@@ -1,0 +1,9 @@
+# Store text files with LF line endings; keep binary data byte-exact.
+* text=auto eol=lf
+*.tif binary
+*.tiff binary
+*.gpkg binary
+*.npz binary
+*.npy binary
+*.pth binary
+*.png binary

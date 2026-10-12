@@ -1,0 +1,78 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- R ----
+.Rhistory
+.RData
+.Rproj.user/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Secrets and experiment logs ----
+.env
+*.netrc
+wandb/
+
+# ---- Model weights and checkpoints (published as GitHub release assets) ----
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# ---- Run outputs ----
+runs/
+outputs/
+release/
+pred*/
+
+# ---- Arrays and caches (only tiny samples under data/sample/ are tracked) ----
+*.npz
+*.npy
+*.h5
+*.zarr/
+!data/sample/**/*.npz
+!data/sample/**/*.npy
+
+# ---- Rasters, point clouds and archives (only data/sample/ is tracked) ----
+*.tif
+*.tiff
+*.TIF
+*.vrt
+*.jp2
+*.img
+*.ovr
+*.aux.xml
+*.laz
+*.las
+*.zip
+*.7z
+*.tar
+*.tar.gz
+!data/sample/**/*.tif
+!data/sample/**/*.tiff
+
+# ---- Vector working files (the tile index in data/ is tracked) ----
+*.gpkg
+*.gpkg-journal
+*.gpkg-wal
+*.gpkg-shm
+!data/tile_index.gpkg

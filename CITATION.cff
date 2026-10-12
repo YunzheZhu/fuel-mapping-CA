@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use this code, the model or the data, please cite the article in preferred-citation."
+title: "fuel-mapping-CA: sub-meter mapping of trees, shrubs and buildings in California from NAIP imagery"
+abstract: >-
+  Code, model weights and labelled data for Zhu, Dixon and Jin (2026), Remote Sensing of
+  Environment 333, 115091: a U-Net that maps trees, shrubs and building footprints at 0.6 m
+  from NAIP imagery, with a semi-automatic LiDAR-based labelling workflow. Code: GPL-3.0-only;
+  data, labels and model weights: CC BY 4.0 (see LICENSE-DATA.md).
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Yunzhe
+    email: ypfzhu@ucdavis.edu
+    affiliation: "Department of Land, Air, and Water Resources, University of California, Davis"
+  - family-names: Dixon
+    given-names: Dan J.
+    affiliation: "Department of Land, Air, and Water Resources, University of California, Davis"
+  - family-names: Jin
+    given-names: Yufang
+    affiliation: "Department of Land, Air, and Water Resources, University of California, Davis"
+repository-code: "https://github.com/YunzheZhu/fuel-mapping-CA"
+url: "https://fuel-type-naip.projects.earthengine.app/view/fuel-mapping"
+license:
+  - GPL-3.0-only
+  - CC-BY-4.0
+version: "1.0.0"
+keywords:
+  - wildland-urban interface
+  - fuel mapping
+  - semantic segmentation
+  - U-Net
+  - NAIP
+  - LiDAR
+  - defensible space
+  - California
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Zhu
+      given-names: Yunzhe
+      affiliation: "Department of Land, Air, and Water Resources, University of California, Davis"
+    - family-names: Dixon
+      given-names: Dan J.
+      affiliation: "Department of Land, Air, and Water Resources, University of California, Davis"
+    - family-names: Jin
+      given-names: Yufang
+      affiliation: "Department of Land, Air, and Water Resources, University of California, Davis"
+  title: "Scalable sub-meter mapping of woody vegetation and structures across California's heterogeneous landscape using deep learning"
+  journal: "Remote Sensing of Environment"
+  volume: 333
+  start: 115091
+  year: 2026
+  doi: "10.1016/j.rse.2025.115091"
+  url: "https://doi.org/10.1016/j.rse.2025.115091"
+  issn: "0034-4257"
+  publisher:
+    name: Elsevier
+  license: CC-BY-4.0
