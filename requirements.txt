@@ -15,3 +15,4 @@ tqdm>=4.60
 #   gdal>=3.1    scripts/mosaic_cog.py (osgeo.gdal; easiest from conda-forge)
 #   wandb>=0.16  scripts/train.py --wandb
 #   pytest>=7    tests/ (the smoke test also runs as a plain script)
+#   matplotlib>=3.6  scripts/make_demo_figures.py (README demo figures; also needs Pillow>=9.1, which matplotlib installs)
