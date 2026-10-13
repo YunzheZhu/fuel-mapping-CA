@@ -371,6 +371,7 @@ grid (0 other, 1 tree, 2 shrub, 3 building, 255 nodata); a full quarter-quad tak
   training settings, all accuracy tables, limitations and differences from the paper text.
 - [`docs/DATA.md`](docs/DATA.md) and [`data/README.md`](data/README.md): release files and checksums, array format,
   tile index, statewide maps.
+- [`README_v1.0.0.md`](README_v1.0.0.md): the earlier, usage-focused version of this README (release v1.0.0), kept for reference.
 
 ---
 
