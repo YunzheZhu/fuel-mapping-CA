@@ -14,7 +14,7 @@ This repository accompanies the paper:
 | Paper (open access, CC BY 4.0) | https://doi.org/10.1016/j.rse.2025.115091 |
 | Interactive map viewer (Google Earth Engine) | https://fuel-type-naip.projects.earthengine.app/view/fuel-mapping |
 | Model weights and training/validation/test arrays | GitHub release [`v1.0.0`](https://github.com/YunzheZhu/fuel-mapping-CA/releases/tag/v1.0.0) |
-| Statewide 0.6 m county maps (v2, 2016–2022) | Box: https://ucdavis.box.com/s/l3rssv9aiiigojzt0h7ql6gteqfdrogt |
+| Statewide 0.6 m county maps (v2, 2016–2024) | Box: https://ucdavis.box.com/s/l3rssv9aiiigojzt0h7ql6gteqfdrogt |
 
 ---
 
