@@ -32,12 +32,12 @@ BAND_ORDER = ("red", "green", "blue", "nir")
 """Expected input band order."""
 
 CLASS_COLORS = {
-    0: (230, 230, 210),  # other
-    1: (24, 110, 40),  # tree
-    2: (200, 170, 60),  # shrub
-    3: (220, 40, 40),  # building
+    0: (0, 0, 0),  # other
+    1: (0, 0, 255),  # tree
+    2: (255, 127, 0),  # shrub
+    3: (255, 0, 0),  # building
 }
-"""RGB colours written as the GeoTIFF colour table of class maps."""
+"""RGB colours of the paper's class maps (Figs. 4 and 6), written as the GeoTIFF colour table of class maps."""
 
 from .model import UNet, load_model  # noqa: E402  (convenience imports)
 from .inference import classify, predict_array, predict_batch  # noqa: E402

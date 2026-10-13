@@ -10,7 +10,7 @@ All data, labels, model weights and map products are licensed **CC BY 4.0**
 
 | Product | Where | Size | Version |
 |---|---|---|---|
-| Tile index (8,256 labelled tiles, footprints and attributes) | repo: `data/tile_index.gpkg`, `data/tile_index.csv` | 5.0 MB + 2.7 MB | paper train/test split |
+| Tile index (8,256 labelled tiles: 7,015 train, 863 test and 378 validation; footprints and attributes, including split, sampling stratum, WUI class, ecoregion, RRK region, LiDAR project, NAIP scenes and `in_release_arrays`) | repo: `data/tile_index.gpkg` (EPSG:6414), `data/tile_index.csv` (the same table without geometry) | 5.0 MB + 2.7 MB | paper train/test split |
 | Test-array index (tile and NAIP year of each test-array row) | repo: `data/test_array_index.csv` | 0.1 MB | v1.0.0 |
 | Sample NAIP + label tiles | repo: `data/sample/` | 2.9 MB | v1.0.0 |
 | Model weights + metadata | GitHub release `v1.0.0` (`models/fuelmap_unet_v1.json` also in repo) | 124.2 MB | v1.0.0 |
@@ -24,6 +24,7 @@ All data, labels, model weights and map products are licensed **CC BY 4.0**
 | Item | Value |
 |---|---|
 | Classes | 0 = other (background), 1 = tree, 2 = shrub, 3 = building; **255 = nodata / no label**. The v2 Box maps add **4 = uncertain** |
+| Class colours | The colour table that `predict_naip.py` and `predict_tiles.py` write into class GeoTIFFs uses the colours of the paper's maps: other `#000000`, tree `#0000FF`, shrub `#FF7F00`, building `#FF0000` (`fuelmap.CLASS_COLORS`) |
 | Imagery | NAIP 4-band `uint8` digital numbers, band order **R, G, B, NIR**. The model input is DN / 255, with no other normalization |
 | Tile | 512 × 512 px at 0.6 m = 307.2 m × 307.2 m |
 | CRS | Tile index and v2 maps: EPSG:6414 (NAD83(2011) / California Albers). Each image tile keeps the grid of its source NAIP image (see `data/README.md`) |
@@ -47,7 +48,9 @@ URL pattern: `https://github.com/YunzheZhu/fuel-mapping-CA/releases/download/v1.
 | `fuelmap_train_4y_part06of06.npz` | 1,546,167,079 | `0b84cd3c1da6a3670eed076f3847d6778fae7357ea30c90d8b9dd41e67d2ffc8` | 1,703 training rows from source rows 8523–10968 |
 | `SHA256SUMS.txt` | – | – | The checksums above, for `sha256sum -c SHA256SUMS.txt` |
 
-The training parts total 9,104,577,187 bytes, and all assets total 11,196,921,396 bytes. The training parts hold
+The training parts total 9,104,577,187 bytes, and all assets total 11,196,921,396 bytes. In round numbers: weights
+124.2 MB, metadata 5.7 kB, test array 614.8 MB, validation array 1.35 GB, training parts 1.46–1.55 GB each (9.10 GB),
+11.20 GB in total. The training parts hold
 consecutive rows of the source array, without the rows that were left out (see
 [Tiles left out of the arrays](#tiles-left-out-of-the-arrays)); the `row` member gives each row's source index.
 

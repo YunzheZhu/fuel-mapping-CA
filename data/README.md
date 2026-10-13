@@ -16,7 +16,7 @@ redistribution; the tile index keeps them and marks them with `in_release_arrays
 | `tile_index.gpkg` | Footprints of all 8,256 labelled tiles (layer `tiles`, EPSG:6414), with split, sampling stratum and stratification attributes |
 | `tile_index.csv` | The same table without geometry; tile centroids are in `centroid_x` and `centroid_y` (EPSG:6414, m) |
 | `test_array_index.csv` | The tile and NAIP year of each of the 693 rows of the released one-year test array |
-| `sample/` | 4 georeferenced NAIP and label GeoTIFF pairs from 4 test tiles, for the quick-start ([below](#sample)) |
+| `sample/` | 4 georeferenced NAIP and label GeoTIFF pairs from 4 test tiles, for the installation check ([docs/PIPELINE.md](../docs/PIPELINE.md#check-the-installation-on-the-sample-tiles); details [below](#sample)) |
 
 ## Conventions
 
@@ -140,7 +140,7 @@ release.
 
 ## `sample/`
 
-These are GeoTIFFs for the quick-start, 2.9 MB in total, listed in `sample/sample_index.csv`. All four tiles are from the
+These are GeoTIFFs for the installation check ([docs/PIPELINE.md](../docs/PIPELINE.md#check-the-installation-on-the-sample-tiles)), 2.9 MB in total, listed in `sample/sample_index.csv`. All four tiles are from the
 test split, and their images and labels are the same as in the test package.
 
 | Tile | NAIP year | WUI class | Region | Labels |

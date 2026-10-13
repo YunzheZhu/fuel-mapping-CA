@@ -23,7 +23,7 @@ release model, not as the exact checkpoint behind the paper's tables.
 | Parameters | 31,038,469 (118 tensors) |
 | Input | NAIP 4-band `uint8` digital numbers, band order **R, G, B, NIR**, divided by 255 (float32, NCHW). No other normalization. Trained on 512 × 512 px tiles at 0.6 m (307.2 m); the network is fully convolutional, so any size works (windows of 1,666 px are used for large rasters) |
 | Output | Logits with 5 channels: 0 other, 1 tree, 2 shrub, 3 building, and 4, a legacy "unlabeled" channel. Channel 4 had loss weight 0 and never received a positive target. At inference the softmax is taken over all 5 outputs and channels 0–3 are kept |
-| Weights format | plain PyTorch `state_dict` (no `module.` prefix), float32; `torch.load(path, map_location="cpu", weights_only=True)` or `fuelmap.model.load_model(path)` |
+| Weights format | plain PyTorch `state_dict` (no `module.` prefix), float32; `torch.load(path, map_location="cpu", weights_only=True)` or `fuelmap.model.load_model(path)`. `load_model` also accepts `module.`-prefixed (DataParallel) state dicts, works with 4- and 5-channel heads and infers the number of outputs from the weights |
 | Framework | PyTorch. Paper-era training environment: PyTorch 2.1.1, Python 3.10.13. The release was checked with PyTorch 2.3.1 |
 
 ### Decision rule
@@ -139,7 +139,8 @@ this row (possibly the repeated 83.8 %) is likely a typo in the paper.
 | 2022 | 88.1% | 86.8% | 77.2% | 69.2% | 81.3% | 81.8% | 77.8% | 72.5% | 93.0% |
 
 \* **UA/PA convention.** This repository uses UA = precision (column-wise, from the prediction side) and PA = recall
-(row-wise, from the reference side). The paper's per-class confusion matrices are in Figs. S1–S2 of the supplement.
+(row-wise, from the reference side). The paper's per-class confusion matrices are in Figs. S1–S2 of the supplement
+(web copies in [`figures/paper`](figures/paper/README.md#fig-s1-error-matrices-by-region)).
 Compared with them, the means printed under "UA" in Tables 1–2 are mean recall, and those under "PA" are mean
 precision. Keep this in mind when you compare UA and PA with the release-model numbers below.
 
@@ -157,6 +158,8 @@ has 143,414,313 labelled pixels; unlabelled pixels are ignored. The commands are
 |---|---|---|---|---|---|
 | Paper rule | 87.08% | 72.49% | 83.88% | 80.91% | 87.72% |
 | Argmax | 85.92% | 70.45% | 82.45% | 78.55% | 88.16% |
+
+Per-class F1 with argmax: tree 82.9 %, shrub 78.8 %, building 77.9 %, other 90.3 %.
 
 | Paper rule | Other | Tree | Shrub | Building |
 |---|---|---|---|---|
@@ -188,6 +191,12 @@ How to read these numbers:
 - The checkpoint was selected on test-split Dice and mIoU, so these scores are not fully independent of checkpoint
   selection.
 
+Figures of this evaluation (example tiles chosen by a fixed rule, the confusion matrix, F1 against paper Table 1 and
+per-tile accuracy by WUI class) are in the README section
+[Try it yourself](../README.md#try-it-yourself-the-release-model-on-the-shared-test-data); the files are in
+[`figures/demo`](figures/demo), and `scripts/make_demo_figures.py` regenerates them
+([PIPELINE.md](PIPELINE.md#readme-demo-figures)).
+
 ### Stratified results of the release model
 
 These results use the paper rule on full-label tiles only (531 tiles; building-only tiles excluded). The strata come
@@ -208,6 +217,9 @@ with Table 1 only loosely.
 | Wildland | 370 | 87.5% | 62.1% | 73.6% | 82.1% | 82.4% | 38.1% | 92.0% |
 
 The total row includes 2 full-label tiles whose WUI class is unknown; they are in none of the class rows.
+
+Building F1 is lower in the full-label tiles than over all 693 tiles. They hold only about 2.0 M of the 6.2 M reference
+building pixels, so false positives weigh heavily; most building-rich urban tiles are among the building-only tiles.
 
 **By Regional Resource Kit region**
 
