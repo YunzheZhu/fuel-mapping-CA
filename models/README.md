@@ -9,7 +9,8 @@ This folder holds only the metadata file, `fuelmap_unet_v1.json`.
 | [`fuelmap_unet_v1.pth`](https://github.com/YunzheZhu/fuel-mapping-CA/releases/download/v1.0.0/fuelmap_unet_v1.pth) | 124,238,486 bytes | `35e9f387de0017e7cbddbdfc7fc8cbeb5645eb114a7fc03cdd8ab8acdde5706a` |
 
 **What it is.** This is the release model. It was retrained in June 2024 on the paper's training tiles (the June 2024
-version of the split, test tiles held out) and matches the paper's reported overall accuracy (87.0 % vs 87.1 %). It is not the exact checkpoint behind the paper's tables. Details:
+version of the split, test tiles held out) and matches the paper's reported overall accuracy (87.1 % on the public
+test array, as in the paper). It is not the exact checkpoint behind the paper's tables. Details:
 
 - training run `UNet_RGBN_4y_II` (June 2024)
 - 10,969 training tile-years
@@ -74,10 +75,11 @@ Plain argmax over channels 0–3 is also supported. On the test array it scores 
 
 ## Accuracy of the release model
 
-These numbers are a re-evaluation on the 806-tile one-year test array. In the confusion matrix, rows are the reference
-and columns the prediction. UA is precision and PA is recall. "no label" pixels are ignored.
+These numbers are a re-evaluation on the 693-tile public one-year test array (`fuelmap_test_1y.npz`). In the confusion
+matrix, rows are the reference and columns the prediction. UA is precision and PA is recall. "no label" pixels are
+ignored.
 
 | Rule | OA | mIoU | mean F1 | F1 other | F1 tree | F1 shrub | F1 building |
 |---|---|---|---|---|---|---|---|
-| paper rule | 0.8700 | 0.7353 | 0.8461 | 0.9106 | 0.8301 | 0.8036 | 0.8399 |
-| argmax | 0.8596 | 0.7196 | 0.8354 | 0.9008 | 0.8283 | 0.7874 | 0.8253 |
+| paper rule | 0.8708 | 0.7249 | 0.8388 | 0.9135 | 0.8305 | 0.8040 | 0.8071 |
+| argmax | 0.8592 | 0.7045 | 0.8245 | 0.9028 | 0.8287 | 0.7879 | 0.7786 |

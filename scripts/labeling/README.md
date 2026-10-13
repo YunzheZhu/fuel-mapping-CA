@@ -165,6 +165,8 @@ San Luis Obispo (County of San Luis Obispo, 2015) and Shasta (Shasta County,
 - Shasta: <https://data-shasta.opendata.arcgis.com/datasets/Shasta::buildingfootprints/about>
 
 Each layer has its own terms of use; see [`LICENSE-DATA.md`](../../LICENSE-DATA.md#third-party-sources).
+The San Luis Obispo layer may not be redistributed, so the tiles labelled from
+it are not in the release arrays.
 
 The Microsoft building footprints were used only to compute sampling
 attributes, never as labels.
@@ -177,7 +179,8 @@ attributes, never as labels.
 - Rasterizing the 2024 un-merged polygons with `--buildings` differs by at
   most 10 pixels per tile.
 - `--buildings-only` reproduces this tile's label in the 2024 test array
-  exactly. The legacy no-label value 4 is now 255.
+  exactly. The legacy no-label value 4 is now 255. (This San Luis Obispo
+  County tile is not in the public test package.)
 - Running the whole chain (public download, `01`, `02` with footprints) gives
   97.2 % pixel agreement with the 2024 checked label of 2016.
 

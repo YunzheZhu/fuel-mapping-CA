@@ -8,7 +8,7 @@
   "md5": "a77d54f00063d76d5343459ee3fada82",
   "format": "PyTorch state_dict (plain keys, no 'module.' prefix); all floating-point tensors float32; load with torch.load(path, map_location='cpu', weights_only=True)",
   "license": "CC BY 4.0",
-  "description": "Release model for Zhu, Dixon & Jin (2026), Remote Sensing of Environment 333, 115091. Retrained in June 2024 on the paper's training tiles (June 2024 version of the split, test tiles held out); it matches the paper's reported overall accuracy (87.0% vs 87.1%). It is the release model, not the exact checkpoint behind the paper's tables.",
+  "description": "Release model for Zhu, Dixon & Jin (2026), Remote Sensing of Environment 333, 115091. Retrained in June 2024 on the paper's training tiles (June 2024 version of the split, test tiles held out); it matches the paper's reported overall accuracy (87.1% on the public one-year test array; paper: 87.1%). It is the release model, not the exact checkpoint behind the paper's tables.",
   "citation": "Zhu, Y., Dixon, D. J., & Jin, Y. (2026). Scalable sub-meter mapping of woody vegetation and structures across California's heterogeneous landscape using deep learning. Remote Sensing of Environment, 333, 115091. https://doi.org/10.1016/j.rse.2025.115091",
   "architecture": {
     "type": "U-Net (milesial/Pytorch-UNet layout)",
@@ -76,43 +76,45 @@
     "checkpoint_selection": "last epoch at which Dice and mIoU on the test arrays both improved (rule of the training code)",
     "loss": "cross-entropy, class weights [other 0.4, tree 1.0, shrub 1.1, building 1.5, unlabeled 0]; ignore_index 4 was set but never triggered (see unlabeled_pixels)",
     "unlabeled_pixels": "no-label pixels (value 4 in the 2024 arrays, 255 in the release packages) were encoded as class 0 (other) by the archived training data loader, so they were trained as other with loss weight 0.4",
-    "multi_gpu": "trained with torch.nn.DataParallel; the 'module.' key prefix was removed for this release"
+    "multi_gpu": "trained with torch.nn.DataParallel; the 'module.' key prefix was removed for this release",
+    "public_training_packages": "fuelmap_train_4y_part01..06of06.npz hold 10,218 of the 10,969 training rows. The 751 urban building-only rows whose labels were rasterized from the San Luis Obispo County building-footprint layer are not distributed, because that layer's terms do not allow redistribution."
   },
   "evaluation_1y_test_array": {
-    "data": "806-tile one-year test array (pixels with label 'no label' ignored); rows = reference, columns = prediction; UA = precision, PA = recall",
-    "pixels": 146820802,
+    "data": "public one-year test array fuelmap_test_1y.npz: 693 tiles at the LiDAR-matched NAIP year (the 806-tile June 2024 test array without its 113 San Luis Obispo urban building-only tiles); 162 of the 693 tiles carry building-only labels; pixels with label 'no label' ignored; rows = reference, columns = prediction; UA = precision, PA = recall",
+    "tiles": 693,
+    "pixels": 143414313,
     "paper_rule": {
-      "OA": 0.87,
-      "mIoU": 0.7353,
-      "mean_F1": 0.8461,
+      "OA": 0.8708,
+      "mIoU": 0.7249,
+      "mean_F1": 0.8388,
       "F1_other_tree_shrub_building": [
-        0.9106,
-        0.8301,
-        0.8036,
-        0.8399
+        0.9135,
+        0.8305,
+        0.804,
+        0.8071
       ],
       "UA_other_tree_shrub_building": [
-        0.9592,
-        0.7882,
-        0.7452,
-        0.8083
+        0.9654,
+        0.7889,
+        0.7459,
+        0.7359
       ],
       "PA_other_tree_shrub_building": [
         0.8668,
         0.8768,
         0.8719,
-        0.874
+        0.8934
       ]
     },
     "argmax": {
-      "OA": 0.8596,
-      "mIoU": 0.7196,
-      "mean_F1": 0.8354,
+      "OA": 0.8592,
+      "mIoU": 0.7045,
+      "mean_F1": 0.8245,
       "F1_other_tree_shrub_building": [
-        0.9008,
-        0.8283,
-        0.7874,
-        0.8253
+        0.9028,
+        0.8287,
+        0.7879,
+        0.7786
       ]
     }
   },

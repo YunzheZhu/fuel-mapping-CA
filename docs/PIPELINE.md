@@ -28,8 +28,8 @@ curl -L -o models/fuelmap_unet_v1.pth $BASE/fuelmap_unet_v1.pth
 
 mkdir -p release && cd release
 curl -LO $BASE/SHA256SUMS.txt
-curl -LO $BASE/fuelmap_test_1y.npz                                   # 715 MB, needed for section 5
-# training and validation arrays (11 GB), needed only for section 4:
+curl -LO $BASE/fuelmap_test_1y.npz                                   # 615 MB, needed for section 5
+# training and validation arrays (10.5 GB), needed only for section 4:
 curl -LO $BASE/fuelmap_val_4y.npz
 for i in 1 2 3 4 5 6; do curl -LO $BASE/fuelmap_train_4y_part0${i}of06.npz; done
 sha256sum -c --ignore-missing SHA256SUMS.txt
@@ -178,8 +178,8 @@ Bit-exact re-training is not expected; see [`MODEL_CARD.md`](MODEL_CARD.md#train
 
 ## 5. Reproduce the release-model accuracy
 
-Whole-tile prediction of the 806-tile test array, then pixel-based accuracy (about 12 min on a 12-thread CPU and
-about 1.5 GB RAM):
+Whole-tile prediction of the 693-tile public test array, then pixel-based accuracy (about 10 min on a 12-thread CPU
+and about 1.5 GB RAM):
 
 ```bash
 python scripts/predict_tiles.py --config configs/release_v1.yaml --weights models/fuelmap_unet_v1.pth \
@@ -187,15 +187,20 @@ python scripts/predict_tiles.py --config configs/release_v1.yaml --weights model
 
 python scripts/evaluate.py --pred-npy outputs/test_1y/pred_class.npy \
     --label-npz release/fuelmap_test_1y.npz --label-key labels \
-    --attributes data/test_array_index.csv --id-column row \
+    --attributes data/test_array_index.csv --id-column index \
     --group-by wui_class rrk_region ecoregion_l3 label_scope \
     --out-json outputs/test_1y/metrics.json --out-csv outputs/test_1y/metrics.csv \
     --per-tile-csv outputs/test_1y/per_tile.csv
 ```
 
-Expected overall result (paper rule): **OA 0.8700, mIoU 0.7353, mean F1 0.8461**. The F1 scores for other, tree, shrub
-and building are 0.9106, 0.8301, 0.8036 and 0.8399. Add `--rule argmax` to `predict_tiles.py` for the argmax result
-(OA 0.8596).
+Expected overall result (paper rule): **OA 0.8708, mIoU 0.7249, mean F1 0.8388**. The F1 scores for other, tree, shrub
+and building are 0.9135, 0.8305, 0.8040 and 0.8071. Add `--rule argmax` to `predict_tiles.py` for the argmax result
+(OA 0.8592).
+
+`evaluate.py` identifies npz tiles by their position in the label array, which is the `index` column of
+`data/test_array_index.csv`. The `row` column is the row in the original 2024 test array (806 rows). The 113
+San Luis Obispo urban-sample tiles of that array are not in the public package; see
+[`DATA.md`](DATA.md#tiles-left-out-of-the-arrays).
 
 Notes:
 - **Nodata masking.** Leave `--mask-nodata` off, which is the default, to reproduce these numbers exactly. One test
@@ -203,7 +208,7 @@ Notes:
 - **Metric conventions.** The confusion matrix has the reference in rows and the prediction in columns. UA = precision
   and PA = recall. mIoU and mean F1 are unweighted means over classes 0–3, skipping only classes absent from both
   the reference and the prediction. A class that is predicted but absent from the reference counts as 0, so the
-  `label_scope = building_only` group has a low mIoU (0.22) although its building F1 is 0.94.
+  `label_scope = building_only` group has a low mIoU (0.23) although its building F1 is 0.95.
 - **Full-label strata.** To compute the stratified tables for full-label tiles only (as in the model card), pass an
   attribute file without the building-only rows:
 
@@ -211,11 +216,11 @@ Notes:
   python -c "import csv; r=list(csv.DictReader(open('data/test_array_index.csv'))); w=csv.DictWriter(open('outputs/full_label_rows.csv','w',newline=''),fieldnames=r[0].keys()); w.writeheader(); w.writerows(x for x in r if x['label_scope']=='full')"
   python scripts/evaluate.py --pred-npy outputs/test_1y/pred_class.npy \
       --label-npz release/fuelmap_test_1y.npz --label-key labels \
-      --attributes outputs/full_label_rows.csv --id-column row --group-by label_scope wui_class rrk_region \
+      --attributes outputs/full_label_rows.csv --id-column index --group-by label_scope wui_class rrk_region \
       --out-csv outputs/test_1y/metrics_full_label.csv
   ```
 
-  The overall row still covers all 806 tiles. The groups cover only the rows in the attribute file.
+  The overall row still covers all 693 tiles. The groups cover only the rows in the attribute file.
 
 **Your own GeoTIFF tiles.** Predict a folder of tiles and pair each prediction with its label by name:
 

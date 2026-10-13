@@ -189,7 +189,9 @@ Labeling summary (Fig. 2):
    - taller objects with planar cover ≥ 50 % → **building**;
    - otherwise, objects whose **95th-percentile height is ≥ 5 m → tree**;
    - the remaining objects (1–5 m) → **shrub**.
-5. County footprints (Napa, San Luis Obispo, Shasta) replace the LiDAR buildings where available.
+5. County building footprints (Napa, San Luis Obispo, Shasta) supply the building labels of the urban sample tiles,
+   which are labelled for buildings only. In the WUI, wildland and validation tiles, buildings come from the LiDAR
+   planar mask.
 6. A person checks the labels against NAIP.
 7. The labels are rasterized to 0.6 m. Tree and shrub pixels with NAIP **NDVI ≤ 0.11** become other.
 
@@ -204,8 +206,8 @@ note in [`scripts/labeling/README.md`](scripts/labeling/README.md).
 Full details: [`docs/MODEL_CARD.md`](docs/MODEL_CARD.md) and [`models/README.md`](models/README.md).
 
 **The model.** `fuelmap_unet_v1.pth` is the **release model**. It was retrained in June 2024 on the paper's training
-tiles, with the test tiles held out. On the test tiles it matches the paper's reported overall accuracy (87.0 % vs
-87.1 %; see [Accuracy](#accuracy)). It is not the exact checkpoint behind the paper's tables.
+tiles, with the test tiles held out. On the public test tiles it matches the paper's reported overall accuracy
+(87.1 %, as in the paper; see [Accuracy](#accuracy)). It is not the exact checkpoint behind the paper's tables.
 
 | Item | Value |
 |---|---|
@@ -213,7 +215,7 @@ tiles, with the test tiles held out. On the test tiles it matches the paper's re
 | Input | NAIP 4-band uint8, band order R, G, B, NIR, divided by 255; trained on 512 × 512 px tiles at 0.6 m |
 | Output | 5 logit channels: 0 other, 1 tree, 2 shrub, 3 building, 4 = legacy "unlabeled" channel (never used; dropped at inference) |
 | Decision rule | The rule used for the paper's test-tile accuracy assessment; the paper text does not spell it out. Softmax over all outputs, then: tree if p_tree > 0.4 and NDVI > 0.11; shrub if p_shrub > 0.4 and NDVI > 0.11; building if p_building > 0.6; other if p_other > 0.5. Each later rule overrides the earlier ones, and all remaining pixels are other. Plain argmax is also available (`--rule argmax`) |
-| Training data | 10,969 training tile-years: 6,649 tiles at their LiDAR-matched NAIP year (1,725 urban building-only + 4,924 WUI/wildland) plus 4,320 rows of WUI tiles at the other NAIP years (2016–2022). The array is the June 2024 cut of the training split, so it holds fewer tiles than the 7,015 training tiles in [`data/tile_index.gpkg`](data/README.md) |
+| Training data | 10,969 training tile-years: 6,649 tiles at their LiDAR-matched NAIP year (1,725 urban building-only + 4,924 WUI/wildland) plus 4,320 rows of WUI tiles at the other NAIP years (2016–2022). The array is the June 2024 cut of the training split, so it holds fewer tiles than the 7,015 training tiles in [`data/tile_index.gpkg`](data/README.md). The public training packages hold 10,218 of these rows (see [Data availability](#data-availability)) |
 | Training | Weighted cross-entropy (other 0.4, tree 1.0, shrub 1.1, building 1.5), RMSprop, batch 20 (multi-GPU `nn.DataParallel`); flips, rotation and scale jitter. 50 epochs; epoch 47 kept. All settings are in [`configs/release_v1.yaml`](configs/release_v1.yaml) |
 | File | plain `state_dict`, float32, 124,238,486 bytes, SHA-256 `35e9f387de0017e7cbddbdfc7fc8cbeb5645eb114a7fc03cdd8ab8acdde5706a` |
 
@@ -263,43 +265,44 @@ paper's tables also give UA, PA and four Regional Resource Kit (RRK) regions; se
 
 ### Release model v1.0.0, re-evaluated
 
-We re-evaluated `fuelmap_unet_v1.pth` with the scripts in this repository. The test set is the **806-tile one-year
-test array** (`fuelmap_test_1y.npz`), which has each tile at its LiDAR-matched NAIP year. There are 146.8 million
-labelled pixels; unlabelled pixels are ignored. The confusion matrix has the reference in rows and the prediction in
-columns. **UA = user's accuracy = precision; PA = producer's accuracy = recall.**
+We re-evaluated `fuelmap_unet_v1.pth` with the scripts in this repository. The test set is the **693-tile public
+one-year test array** (`fuelmap_test_1y.npz`), which has each tile at its LiDAR-matched NAIP year. There are 143.4
+million labelled pixels; unlabelled pixels are ignored. The confusion matrix has the reference in rows and the
+prediction in columns. **UA = user's accuracy = precision; PA = producer's accuracy = recall.**
 
 | Decision rule | OA | mIoU | mean F1 | F1 Tree | F1 Shrub | F1 Building | F1 Other |
 |---|---|---|---|---|---|---|---|
-| **Paper rule** (thresholds + NDVI) | **87.0%** | 73.5% | 84.6% | 83.0% | 80.4% | 84.0% | 91.1% |
-| Argmax | 86.0% | 72.0% | 83.5% | 82.8% | 78.7% | 82.5% | 90.1% |
+| **Paper rule** (thresholds + NDVI) | **87.1%** | 72.5% | 83.9% | 83.0% | 80.4% | 80.7% | 91.3% |
+| Argmax | 85.9% | 70.4% | 82.5% | 82.9% | 78.8% | 77.9% | 90.3% |
 
 | Paper rule, per class | Tree | Shrub | Building | Other |
 |---|---|---|---|---|
-| UA (precision) | 78.8% | 74.5% | 80.8% | 95.9% |
-| PA (recall) | 87.7% | 87.2% | 87.4% | 86.7% |
-| IoU | 71.0% | 67.2% | 72.4% | 83.6% |
+| UA (precision) | 78.9% | 74.6% | 73.6% | 96.5% |
+| PA (recall) | 87.7% | 87.2% | 89.3% | 86.7% |
+| IoU | 71.0% | 67.2% | 67.7% | 84.1% |
 
 How these numbers relate to the paper:
 
-- **Different test array.** This array is the June 2024 test array, so it is not identical to the paper's 782-tile
-  set.
-- **Building-only tiles.** 275 of its 806 tiles are urban-sample tiles with **building-only labels**: every non-building
-  pixel is unlabelled. These tiles add building pixels but no tree, shrub or other pixels. As a result, the overall
-  building scores and mIoU are not directly comparable with Table 1. The paper's final evaluation used full labels for
-  these tiles.
+- **Different test array.** The June 2024 test array has 806 tiles and is not identical to the paper's 782-tile set.
+  The public package holds 693 of them. The 113 urban-sample tiles from San Luis Obispo County are left out, because
+  their building labels come from that county's building-footprint layer, whose terms do not allow redistribution.
+- **Building-only tiles.** 162 of the 693 tiles are urban-sample tiles (Napa and Shasta counties) with
+  **building-only labels**: every non-building pixel is unlabelled. These tiles add building pixels but no tree, shrub
+  or other pixels. As a result, the overall building scores and mIoU are not directly comparable with Table 1. The
+  paper's final evaluation used full labels for these tiles.
 - **Checkpoint selection.** The training code kept epoch 47 because test-split Dice and mIoU had both improved. These
   test scores are therefore not fully independent of checkpoint selection.
 
 To reproduce them, see [`docs/PIPELINE.md`](docs/PIPELINE.md#5-reproduce-the-release-model-accuracy). This takes about
-12 minutes on a CPU.
+10 minutes on a CPU.
 
 <details>
 <summary>Release model by WUI class (full-label tiles only, paper rule)</summary>
 
-These results come from `scripts/evaluate.py --attributes data/test_array_index.csv`, with the 275 building-only tiles
-excluded. The tile-to-row mapping of the test array was recovered after the fact: 796 of 806 rows are matched with high
-confidence (see [`data/README.md`](data/README.md#test_array_indexcsv)). These strata are smaller than the paper's, so
-compare them with Table 1 only loosely.
+These results come from `scripts/evaluate.py --attributes data/test_array_index.csv`, with the 162 building-only tiles
+excluded. The tile-to-row mapping of the test array was recovered after the fact: 683 of the 693 rows are matched with
+high confidence (see [`data/README.md`](data/README.md#test_array_indexcsv)). These strata are smaller than the
+paper's, so compare them with Table 1 only loosely.
 
 | WUI class | Tiles | OA | mIoU | mean F1 | F1 Tree | F1 Shrub | F1 Building | F1 Other |
 |---|---|---|---|---|---|---|---|---|
@@ -311,7 +314,7 @@ compare them with Table 1 only loosely.
 
 The total row includes 2 full-label tiles whose WUI class is unknown; they are in none of the class rows.
 
-Building F1 is lower in the full-label tiles. They hold only about 2 M of the 9.6 M reference building pixels, so false
+Building F1 is lower in the full-label tiles. They hold only about 2.0 M of the 6.2 M reference building pixels, so false
 positives weigh heavily; most building-rich urban tiles are among the building-only tiles. The [model card](docs/MODEL_CARD.md#stratified-results-of-the-release-model)
 also gives the results by RRK region.
 </details>
@@ -326,27 +329,33 @@ Details: [`docs/DATA.md`](docs/DATA.md) (overview, checksums) and [`data/README.
 
 | File | Description |
 |---|---|
-| `tile_index.gpkg` | Footprints of all 8,256 labelled tiles (EPSG:6414): 7,015 train, 863 test and 378 validation. Columns include split, sampling stratum, WUI class, ecoregion, RRK region, LiDAR project and NAIP scenes |
+| `tile_index.gpkg` | Footprints of all 8,256 labelled tiles (EPSG:6414): 7,015 train, 863 test and 378 validation. Columns include split, sampling stratum, WUI class, ecoregion, RRK region, LiDAR project, NAIP scenes and whether the tile is in the release arrays (`in_release_arrays`) |
 | `tile_index.csv` | The same table without geometry |
-| `test_array_index.csv` | Tile and NAIP year of each of the 806 rows of the test array |
+| `test_array_index.csv` | Tile and NAIP year of each of the 693 rows of the public test array |
 | `sample/` | 4 NAIP + label GeoTIFF pairs (2.9 MB) for the quick start |
 
-**GitHub release [`v1.0.0`](https://github.com/YunzheZhu/fuel-mapping-CA/releases/tag/v1.0.0)** (11.96 GB in total).
+**GitHub release [`v1.0.0`](https://github.com/YunzheZhu/fuel-mapping-CA/releases/tag/v1.0.0)** (11.20 GB in total).
 Download URL: `https://github.com/YunzheZhu/fuel-mapping-CA/releases/download/v1.0.0/<file>`.
 
 | File | Size | Content |
 |---|---|---|
 | `fuelmap_unet_v1.pth` | 124.2 MB | Release model weights |
-| `fuelmap_unet_v1.json` | 5.1 kB | Model metadata (also in `models/`) |
-| `fuelmap_test_1y.npz` | 714.7 MB | 806 test tiles at the LiDAR-matched NAIP year, with `tile_id` and `naip_year` |
+| `fuelmap_unet_v1.json` | 5.7 kB | Model metadata (also in `models/`) |
+| `fuelmap_test_1y.npz` | 614.8 MB | 693 test tiles at the LiDAR-matched NAIP year, with `tile_id` and `naip_year` |
 | `fuelmap_val_4y.npz` | 1.35 GB | 1,512 validation tile-years (378 tiles × 4 NAIP years) |
-| `fuelmap_train_4y_part01of06.npz` … `part06of06.npz` | 1.57–1.66 GB each (9.77 GB) | 10,969 training tile-years (the release model's training data) |
+| `fuelmap_train_4y_part01of06.npz` … `part06of06.npz` | 1.46–1.55 GB each (9.10 GB) | 10,218 training tile-years: the release model's training data without the San Luis Obispo urban-sample tiles (see below) |
 | `SHA256SUMS.txt` | <1 kB | SHA-256 checksums of all assets |
 
 The arrays are compressed `.npz` files with these members:
 - `images`: (n, 512, 512, 4) uint8, bands R, G, B, NIR;
 - `labels`: (n, 512, 512) uint8, values 0–3, with 255 = no label;
 - `row`: the row index in the original array.
+
+**Tiles left out of the arrays.** The building labels of the urban-sample tiles from San Luis Obispo County were
+rasterized from the county's building-footprint layer, and that layer's terms do not allow redistribution. These tiles
+(113 test and 751 training tiles) are therefore not in the public arrays. Their footprints and attributes stay in the
+tile index, with `in_release_arrays = False`. The release model was trained on the complete arrays, so the public
+training packages have 751 fewer rows than its training data.
 
 **Statewide maps on Box (v2):** https://ucdavis.box.com/s/l3rssv9aiiigojzt0h7ql6gteqfdrogt
 
@@ -406,8 +415,8 @@ GitHub's "Cite this repository" button reads [`CITATION.cff`](CITATION.cff).
   [milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet) (GPL-3.0).
 - **Data, labels, model weights and map products:** Creative Commons Attribution 4.0 International (CC BY 4.0), see
   [`LICENSE-DATA.md`](LICENSE-DATA.md). The same file has notes on third-party sources: NAIP, USGS 3DEP and the
-  county building footprints the building labels were derived from (the San Luis Obispo layer is an OpenStreetMap
-  extract: © OpenStreetMap contributors, ODbL).
+  county building footprints that some building labels were derived from. Labels derived from the San Luis Obispo
+  County footprint layer are not distributed, because that layer's terms do not allow redistribution.
 
 ---
 

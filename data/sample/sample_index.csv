@@ -1,5 +1,5 @@
 tile_id,naip_year,naip_file,label_file,crs,px_other,px_tree,px_shrub,px_building,px_nodata,source
-WUI_682706_NE,2016,WUI_682706_NE_2016_naip.tif,WUI_682706_NE_2016_label.tif,EPSG:26911,194612,17099,30173,20260,0,test array row 208
-WUI_27384_NW,2018,WUI_27384_NW_2018_naip.tif,WUI_27384_NW_2018_label.tif,EPSG:26910,129198,65540,18450,48956,0,test array row 227
-WUI_33371_SE,2016,WUI_33371_SE_2016_naip.tif,WUI_33371_SE_2016_label.tif,EPSG:26911,193363,25734,7995,35052,0,test array row 138
-URB_0014,2016,URB_0014_2016_naip.tif,URB_0014_2016_label.tif,EPSG:6414,0,0,0,23542,238602,test array row 578 (building-only labels)
+WUI_682706_NE,2016,WUI_682706_NE_2016_naip.tif,WUI_682706_NE_2016_label.tif,EPSG:26911,194612,17099,30173,20260,0,test array row 208 (index 206 in fuelmap_test_1y.npz)
+WUI_27384_NW,2018,WUI_27384_NW_2018_naip.tif,WUI_27384_NW_2018_label.tif,EPSG:26910,129198,65540,18450,48956,0,test array row 227 (index 225 in fuelmap_test_1y.npz)
+WUI_33371_SE,2016,WUI_33371_SE_2016_naip.tif,WUI_33371_SE_2016_label.tif,EPSG:26911,193363,25734,7995,35052,0,test array row 138 (index 137 in fuelmap_test_1y.npz)
+URB_0014,2016,URB_0014_2016_naip.tif,URB_0014_2016_label.tif,EPSG:6414,0,0,0,23542,238602,test array row 578 (index 560 in fuelmap_test_1y.npz; building-only labels)

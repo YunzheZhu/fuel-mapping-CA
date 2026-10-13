@@ -45,7 +45,7 @@ source continue to apply to the information taken from it.
 |---|---|---|
 | **NAIP imagery** (USDA National Agriculture Imagery Program) | The image tiles in `data/sample/` and the `images` arrays are clips of NAIP 4-band imagery (2016–2022). All model inputs are NAIP | NAIP imagery is in the U.S. public domain. Please credit USDA NAIP |
 | **USGS 3D Elevation Program (3DEP) aerial LiDAR** | Used to make the tree, shrub and building labels (object segmentation and heights). No point clouds are redistributed | USGS 3DEP data are in the U.S. public domain. Please credit USGS 3DEP |
-| **County building footprints**: Napa County GIS (2016), County of San Luis Obispo (2015), Shasta County (2018) | Rasterised building masks derived from these layers are part of the released labels: the building-only labels of the urban-sample tiles (`URB_*`, column `footprint_county` of the tile index), and the building pixels of other labelled tiles inside these counties, where the footprints replaced the LiDAR buildings. Only the footprint geometry was used; the vector layers themselves are not redistributed | Terms and credits per county: see [below](#county-building-footprints) |
+| **County building footprints**: Napa County GIS (2016), Shasta County (2018), County of San Luis Obispo (2015) | Rasterised building masks derived from the Napa and Shasta layers are part of the released labels: the building-only labels of the urban-sample tiles from these two counties (`URB_*`, column `footprint_county` of the tile index). Labels derived from the San Luis Obispo layer are **not** distributed (see [below](#county-building-footprints)). Only the footprint geometry was used; the vector layers themselves are not redistributed | Terms and credits per county: see [below](#county-building-footprints) |
 | **Microsoft US Building Footprints** | Used only to compute sampling attributes when the tiles were selected | **Not** redistributed. No Microsoft footprint data or attributes derived from them are in this repository or its release assets |
 | **CAL FIRE FRAP WUI (2015)**, **U.S. EPA Level III ecoregions**, **Regional Resource Kit regions**, **USGS 3DEP Work Unit Extent Spatial Metadata (WESM)** | The tile index has category names and identifiers taken from these layers: WUI class, ecoregion, RRK region, LiDAR work unit and project | Only names and identifiers are included, not the layers themselves |
 
@@ -58,11 +58,15 @@ source continue to apply to the information taken from it.
   provided "as is" under the Shasta County GIS Data Disclaimer, which asks users to acknowledge the County of Shasta
   GIS as the source. Credit: County of Shasta GIS.
 - **San Luis Obispo County**
-  ([layer](https://opendata-slocounty.hub.arcgis.com/datasets/SLOCounty::building-footprints/about)): the layer is a
-  snapshot extract of OpenStreetMap building data. Building labels of tiles in San Luis Obispo County therefore contain
-  information from OpenStreetMap, © OpenStreetMap contributors, made available under the Open Database License
-  (ODbL) 1.0 (https://www.openstreetmap.org/copyright). Credit: County of San Luis Obispo; © OpenStreetMap
-  contributors.
+  ([layer](https://opendata-slocounty.hub.arcgis.com/datasets/SLOCounty::building-footprints/about)): the paper used
+  this layer (a snapshot extract of OpenStreetMap building data, © OpenStreetMap contributors) for the building labels
+  of the urban-sample tiles in San Luis Obispo County. Its terms state: "This data may not be given away, sold or
+  otherwise distributed to any third party without express written permission from the County of San Luis Obispo."
+  **Labels derived from this layer are therefore not distributed.** The 864 urban-sample tiles labelled from it (113
+  test and 751 training tiles; `footprint_county = San Luis Obispo`, `in_release_arrays = False` in the tile index) are
+  not in the release packages, and their labels are not in this repository. The building labels of the released tiles
+  inside San Luis Obispo County (validation and WUI training tiles) come from the LiDAR segmentation, not from this
+  layer.
 
 ## Disclaimer
 

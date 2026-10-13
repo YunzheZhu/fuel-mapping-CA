@@ -12,8 +12,8 @@
 
 **What it is.** This is the release model of the paper. It was retrained (run `UNet_RGBN_4y_II`, June 2024) on the
 paper's training tiles (the June 2024 version of the split, with the test tiles held out). It matches the paper's
-reported overall accuracy: 87.0 % on the one-year test array, against 87.1 % in the paper. It is described here as the release model, not as the exact checkpoint behind the
-paper's tables.
+reported overall accuracy: 87.1 % on the public one-year test array, as in the paper. It is described here as the
+release model, not as the exact checkpoint behind the paper's tables.
 
 ## Model details
 
@@ -50,8 +50,8 @@ applies the gate directly at 0.6 m by default. Use `--no-ndvi` to reproduce the 
 ## Intended use
 
 - Mapping trees, shrubs, buildings and other land at 0.6 m from **NAIP 4-band imagery over California**. The paper
-  evaluated its model on NAIP 2016–2022 (Table 2). The release model was re-evaluated on the one-year test array
-  (NAIP 2016: 296 tiles, 2018: 433, 2020: 76, 2022: 1); it has not been evaluated across years.
+  evaluated its model on NAIP 2016–2022 (Table 2). The release model was re-evaluated on the public one-year test
+  array (NAIP 2016: 183 tiles, 2018: 433, 2020: 76, 2022: 1); it has not been evaluated across years.
 - Typical uses:
   - fuel and structure mapping in the wildland–urban interface;
   - screening of vegetation around buildings (defensible-space zones);
@@ -74,11 +74,11 @@ applies the gate directly at 0.6 m by default. Use `--no-ndvi` to reproduce the 
 
 | Item | Value |
 |---|---|
-| Labels | Semi-automatic labels (paper §2.4, Fig. 2). Objects come from USGS 3DEP aerial LiDAR (42 surveys, 2015–2022, > 10 pts/m²), and their initial classes from a planar mask and heights: other below 1 m; otherwise building if planar cover ≥ 50 %, tree if the 95th-percentile height is ≥ 5 m (paper: "above 5 m"), else shrub. County footprints (Napa, San Luis Obispo, Shasta) replace LiDAR buildings where available. A person checked the labels against NAIP from the LiDAR year. They were then rasterized to 0.6 m, and tree/shrub pixels with NAIP NDVI ≤ 0.11 (paper: "below 0.11") were set to other |
+| Labels | Semi-automatic labels (paper §2.4, Fig. 2). Objects come from USGS 3DEP aerial LiDAR (42 surveys, 2015–2022, > 10 pts/m²), and their initial classes from a planar mask and heights: other below 1 m; otherwise building if planar cover ≥ 50 %, tree if the 95th-percentile height is ≥ 5 m (paper: "above 5 m"), else shrub. County building footprints (Napa, San Luis Obispo, Shasta) supply the building labels of the building-only urban sample tiles; in the WUI, wildland and validation tiles, buildings come from the LiDAR planar mask. A person checked the labels against NAIP from the LiDAR year. They were then rasterized to 0.6 m, and tree/shrub pixels with NAIP NDVI ≤ 0.11 (paper: "below 0.11") were set to other |
 | Sampling | Stratified by FRAP 2015 WUI type, EPA Level III ecoregion and urban/wildland gradient (paper §2.3); the tiles are listed in [`data/tile_index.gpkg`](../data/README.md) |
-| Training array | 10,969 tile-years (`fuelmap_train_4y_part01..06of06.npz`): 6,649 tiles at their LiDAR-matched NAIP year (1,725 urban building-only + 4,924 WUI/wildland) plus 4,320 rows of WUI tiles at the other NAIP years, relabelled with that year's NDVI mask. Built in June 2024 from the paper's train/test split, before the split was finalised, so it holds fewer tiles than the 7,015 training tiles in [`data/tile_index.gpkg`](../data/README.md). The paper counts 7,015 training tiles and 10,086 training tile-years |
+| Training array | 10,969 tile-years: 6,649 tiles at their LiDAR-matched NAIP year (1,725 urban building-only + 4,924 WUI/wildland) plus 4,320 rows of WUI tiles at the other NAIP years, relabelled with that year's NDVI mask. Built in June 2024 from the paper's train/test split, before the split was finalised, so it holds fewer tiles than the 7,015 training tiles in [`data/tile_index.gpkg`](../data/README.md). The paper counts 7,015 training tiles and 10,086 training tile-years. The public packages (`fuelmap_train_4y_part01..06of06.npz`) hold 10,218 of the rows: the 751 urban building-only rows labelled from the San Luis Obispo County footprint layer are not distributed ([details](DATA.md#tiles-left-out-of-the-arrays)) |
 | Validation array | 1,512 tile-years (378 validation tiles × 4 NAIP years, `fuelmap_val_4y.npz`). Released for model development; the release checkpoint was not selected on it |
-| Test array | 806 tiles at the LiDAR-matched NAIP year (`fuelmap_test_1y.npz`). The paper reports 782 testing tiles |
+| Test array | 806 tiles at the LiDAR-matched NAIP year in the 2024 array. The public package (`fuelmap_test_1y.npz`) holds 693 of them; its 113 San Luis Obispo urban building-only tiles are not distributed. The paper reports 782 testing tiles |
 | Label scope | Most tiles have full labels (all four classes). Urban-sample tiles from the county-footprint counties carry **building-only labels** in the 2024 arrays: footprints are building and all other pixels are unlabelled |
 | Unlabelled pixels | Value 4 in the 2024 arrays, 255 in the release packages. The archived data loader encoded them as class 0 ("other"; see [differences](#differences-between-the-paper-text-and-the-release-model)), so the release model saw them as other with loss weight 0.4 |
 
@@ -149,21 +149,21 @@ precision. Keep this in mind when you compare UA and PA with the release-model n
 
 ### Re-evaluation of the release model
 
-The release model was re-evaluated on the 806-tile one-year test array (`fuelmap_test_1y.npz`). The test set has
-146,820,802 labelled pixels; unlabelled pixels are ignored. The commands are in
+The release model was re-evaluated on the 693-tile public one-year test array (`fuelmap_test_1y.npz`). The test set
+has 143,414,313 labelled pixels; unlabelled pixels are ignored. The commands are in
 [`PIPELINE.md`](PIPELINE.md#5-reproduce-the-release-model-accuracy).
 
 | Decision rule | OA | mIoU | mean F1 | mean UA | mean PA |
 |---|---|---|---|---|---|
-| Paper rule | 87.00% | 73.53% | 84.61% | 82.52% | 87.24% |
-| Argmax | 85.96% | 71.96% | 83.54% | 80.51% | 87.69% |
+| Paper rule | 87.08% | 72.49% | 83.88% | 80.91% | 87.72% |
+| Argmax | 85.92% | 70.45% | 82.45% | 78.55% | 88.16% |
 
 | Paper rule | Other | Tree | Shrub | Building |
 |---|---|---|---|---|
-| UA (precision) | 95.92% | 78.82% | 74.52% | 80.83% |
-| PA (recall) | 86.68% | 87.68% | 87.19% | 87.40% |
-| F1 | 91.06% | 83.01% | 80.36% | 83.99% |
-| IoU | 83.60% | 70.96% | 67.16% | 72.40% |
+| UA (precision) | 96.54% | 78.89% | 74.59% | 73.59% |
+| PA (recall) | 86.68% | 87.68% | 87.19% | 89.34% |
+| F1 | 91.35% | 83.05% | 80.40% | 80.71% |
+| IoU | 84.07% | 71.01% | 67.23% | 67.65% |
 
 Confusion matrix, paper rule (pixels; rows = reference, columns = prediction):
 
@@ -172,13 +172,15 @@ Confusion matrix, paper rule (pixels; rows = reference, columns = prediction):
 | Other | 73,078,865 | 4,843,470 | 4,473,584 | 1,915,231 |
 | Tree | 750,452 | 25,097,725 | 2,722,000 | 55,110 |
 | Shrub | 1,337,705 | 1,740,436 | 21,139,085 | 27,658 |
-| Building | 1,020,475 | 160,747 | 33,039 | 8,425,220 |
+| Building | 527,401 | 133,159 | 3,920 | 5,568,512 |
 
 How to read these numbers:
 
-- The test array is the June 2024 cut of the paper's test split (806 tiles, against 782 in the paper).
-- 275 of the tiles are urban-sample tiles with building-only labels. They contribute 7.6 M of the 9.6 M reference
-  building pixels and no pixels of the other classes.
+- The test array is the June 2024 cut of the paper's test split (806 tiles, against 782 in the paper). The public
+  package holds 693 of these tiles: the 113 urban-sample tiles from San Luis Obispo County are not distributed,
+  because their building labels come from that county's footprint layer, whose terms do not allow redistribution.
+- 162 of the 693 tiles are urban-sample tiles (Napa and Shasta counties) with building-only labels. They contribute
+  4.2 M of the 6.2 M reference building pixels and no pixels of the other classes.
   - Building recall therefore mostly reflects these urban tiles.
   - Building false positives can only be counted in the full-label tiles, so building precision and F1 are higher than
     they would be with full labels everywhere.
@@ -190,7 +192,7 @@ How to read these numbers:
 
 These results use the paper rule on full-label tiles only (531 tiles; building-only tiles excluded). The strata come
 from [`data/test_array_index.csv`](../data/test_array_index.csv). Its row-to-tile mapping was recovered after the fact,
-and 796 of 806 rows are matched with high confidence. mIoU and mean F1 are unweighted means over classes 0–3; only a
+and 683 of the 693 rows are matched with high confidence. mIoU and mean F1 are unweighted means over classes 0–3; only a
 class absent from both the reference and the prediction of a stratum is skipped (a class that is predicted but absent
 from the reference counts as 0). These tile sets are smaller than and different from the paper's, so compare them
 with Table 1 only loosely.
@@ -268,7 +270,7 @@ shrub F1 is lowest in Northern California and highest in Southern California.
 | Inference decision | not described | thresholds 0.4 / 0.4 / 0.6 / 0.5 with an NDVI > 0.11 gate for tree and shrub (see [Decision rule](#decision-rule)) |
 | Large-area inference | not described | 1,666 px windows, 25 % overlap, linear-ramp blending, zero-padded edge windows (`scripts/predict_naip.py`) |
 | Input scaling | not described | DN / 255, no radiometric normalization |
-| Data counts | 7,015 training tiles / 10,086 training tile-years; 782 testing tiles | 10,969 training tile-years; 806 test tiles (June 2024 arrays from the same split) |
+| Data counts | 7,015 training tiles / 10,086 training tile-years; 782 testing tiles | 10,969 training tile-years; 806 test tiles (June 2024 arrays from the same split; the public packages hold 10,218 and 693 of them) |
 | Fig. 3 decoder | last block labelled 64-32-32 | standard U-Net decoder ending in 64 channels; Fig. 3 is schematic |
 
 ## Citation
